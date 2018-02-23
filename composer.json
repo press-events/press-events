@@ -1,0 +1,31 @@
+{
+  "name": "press-events/press-events",
+  "description": "An event managment plugin that helps you manage and share events.",
+  "homepage": "http://wordpresseventsplugin.com/",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0+",
+  "require": {
+    "composer/installers": "~1.2"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "^0.14",
+    "wimg/php-compatibility": "^8.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+    "apigen/apigen": "^4"
+  },
+  "scripts": {
+    "phpcs": [
+      "phpcs -s -p --standard=./phpcs.ruleset.xml"
+    ],
+    "phpcbf": [
+      "phpcbf -p --standard=./phpcs.ruleset.xml"
+    ]
+  },
+  "extra": {
+    "scripts-description": {
+      "phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+      "phpcbf": "Fix coding standards warnings/errors automatically with PHP Code Beautifier"
+    }
+  }
+}

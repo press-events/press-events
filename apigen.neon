@@ -1,0 +1,16 @@
+destination: pe-apidocs
+extensions: [php]
+source:
+    - press-events.php
+    - includes
+charset: [UTF-8]
+main: PE
+title: Press Events Code Reference
+baseUrl: https://docs.woocommerce.com/pe-apidocs/
+templateTheme: bootstrap
+php: false
+sourceCode: true
+tree: true
+deprecated: true
+todo: true
+download: false

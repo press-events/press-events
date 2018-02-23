@@ -1,0 +1,32 @@
+/**
+ * _fonts.scss
+ * Custom Press Events fonts.
+ */
+@font-face {
+    font-family: 'press-events';
+    src: url('../fonts/press-events.eot?94322939');
+    src: url('../fonts/press-events.eot?94322939#iefix') format('embedded-opentype'),
+         url('../fonts/press-events.woff2?94322939') format('woff2'),
+         url('../fonts/press-events.woff?94322939') format('woff'),
+         url('../fonts/press-events.ttf?94322939') format('truetype'),
+         url('../fonts/press-events.svg?94322939#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* calendar '\e800' */
+/* right '\e801' */
+/* left '\e802' */
+/* organisers '\e803' */
+/* location '\e804' */
+/* clock '\e805' */
+/* edit '\e806' */
+/* right-big '\e807' */
+/* left-big '\e808' */
+/* info '\e809' */
+/* cancel '\e80a' */
+/* menu-1 '\e80b' */
+/* mail '\e80c' */
+/* phone '\e80d' */
+/* menu '\f008' */
+/* link-ext '\f08e' */

@@ -1,0 +1,40 @@
+@mixin clearfix() {
+	*zoom: 1;
+
+	&::before,
+	&::after {
+		content: ' ';
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
+}
+
+@mixin icon($icon) {
+	&:before {
+		content: $icon;
+		font-family: 'press-events';
+		font-style: normal;
+		font-weight: normal;
+		speak: none;
+
+		display: inline-block;
+		text-decoration: inherit;
+		width: 1em;
+		margin-right: .2em;
+		text-align: center;
+		vertical-align: middle;
+
+		font-variant: normal;
+		text-transform: none;
+
+		line-height: 1em;
+
+		margin-left: .2em;
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}

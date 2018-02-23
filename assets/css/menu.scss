@@ -1,0 +1,23 @@
+/**
+ * menu.scss
+ * Styles applied to dashboard menu items added by Press Events.
+ */
+
+/**
+ * Imports
+ */
+@import 'mixins';
+@import 'fonts';
+
+/**
+ * Admin menu styles
+ */
+#adminmenu #menu-posts-pe_event .menu-icon-pe_event div.wp-menu-image::before {
+    font-family: 'press-events' !important;
+	content: '\e800';
+}
+
+#wpadminbar #wp-toolbar #wp-admin-bar-root-default #wp-admin-bar-pe-events .ab-icon:before {
+    font-family: 'press-events' !important;
+	content: '\e800';
+}

@@ -1,0 +1,18 @@
+/**
+ * Press Events CSS Variables
+ */
+
+$press-events:   	#f9193e;
+$green:         	#4caf50;
+$red:           	#f43636;
+$orange:        	#ff9800;
+$blue:          	#2196f3;
+
+$primary:           #9c9c9c;                                    // Primary color for buttons (alt)
+$primarytext:       desaturate(lighten($primary, 50%), 18%);    // Text on primary color bg
+
+$secondary:         desaturate(lighten($primary, 40%), 21%);    // Secondary buttons
+$secondarytext:     desaturate(darken($secondary, 60%), 21%);   // Text on secondary color bg
+
+$contentbg:         #fff;                                       // Content BG - Tabs (active state)
+$subtext:           #777;
