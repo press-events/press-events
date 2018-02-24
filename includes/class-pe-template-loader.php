@@ -42,7 +42,7 @@ class PE_Template_Loader {
 	 */
 	public static function template_loader( $template ) {
 		if ( is_press_events() ) {
-			$template = locate_template( 'page.php' );
+            $template = locate_template( pe_get_option( 'event-template', 'pe-general', 'page.php' ) );
             add_action( 'loop_start', array( __CLASS__, 'event_template_loader' ) );
         }
 

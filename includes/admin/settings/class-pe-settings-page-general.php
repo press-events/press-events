@@ -89,7 +89,18 @@ class PE_Settings_Page_General {
 				'type' => 'select',
 				'default' => 'GB',
 				'options' => PE()->countries->get_countries()
-			),
+			)
+		);
+
+		$default_template = array( 'page.php' => __( 'Default Template', 'press-events' ) );
+		$theme_templates = wp_get_theme()->get_page_templates();
+
+		$fields[ self::$tab_id ][] = array(
+			'name' => 'event-template',
+            'label' => __( 'Event page template', 'press-events' ),
+			'help' => __( 'Select the default page template for the event pages. These are based on the current themes available templates.', 'press-events' ),
+			'type' => 'select',
+			'options' => array_merge( $default_template, $theme_templates )
 		);
 
 		// -events
