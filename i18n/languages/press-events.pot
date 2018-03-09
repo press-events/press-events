@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Press Events package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Press Events 1.0.0\n"
+"Project-Id-Version: Press Events 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/press-events\n"
-"POT-Creation-Date: 2018-02-22 17:23:14+00:00\n"
+"POT-Creation-Date: 2018-03-09 21:07:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1164,17 +1164,17 @@ msgid "End date"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:11
-#: includes/class-pe-ajax.php:185
+#: includes/class-pe-ajax.php:187
 msgid "Select location"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:12
-#: includes/class-pe-ajax.php:186 includes/class-pe-post-types.php:176
+#: includes/class-pe-ajax.php:188 includes/class-pe-post-types.php:176
 msgid "Add new location"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:30
-#: includes/class-pe-ajax.php:204
+#: includes/class-pe-ajax.php:206
 msgid "Add a location"
 msgstr ""
 
@@ -1217,17 +1217,17 @@ msgid "Show Google Map"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:11
-#: includes/class-pe-ajax.php:328
+#: includes/class-pe-ajax.php:330
 msgid "Select organisers"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:13
-#: includes/class-pe-ajax.php:330
+#: includes/class-pe-ajax.php:332
 msgid "Add new organiser"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:33
-#: includes/class-pe-ajax.php:350
+#: includes/class-pe-ajax.php:352
 msgid "Add an organiser"
 msgstr ""
 
@@ -1277,83 +1277,97 @@ msgid ""
 "event."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:99
-msgid "Archive views"
+#: includes/admin/settings/class-pe-settings-page-general.php:95
+msgid "Default Template"
 msgstr ""
 
 #: includes/admin/settings/class-pe-settings-page-general.php:100
+msgid "Event page template"
+msgstr ""
+
+#: includes/admin/settings/class-pe-settings-page-general.php:101
+msgid ""
+"Select the default page template for the event pages. These are based on "
+"the current themes available templates."
+msgstr ""
+
+#: includes/admin/settings/class-pe-settings-page-general.php:110
+msgid "Archive views"
+msgstr ""
+
+#: includes/admin/settings/class-pe-settings-page-general.php:111
 msgid "Available archive views."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:113
+#: includes/admin/settings/class-pe-settings-page-general.php:124
 msgid "Default archive view"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:114
+#: includes/admin/settings/class-pe-settings-page-general.php:125
 msgid "Choose the default event archive view."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:124
+#: includes/admin/settings/class-pe-settings-page-general.php:135
 msgid "Enable AJAX archives"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:131
+#: includes/admin/settings/class-pe-settings-page-general.php:142
 msgid "Enable comments"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:146
+#: includes/admin/settings/class-pe-settings-page-general.php:157
 msgid "Currency"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:147
+#: includes/admin/settings/class-pe-settings-page-general.php:158
 msgid "Select the default currency for the events."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:154
+#: includes/admin/settings/class-pe-settings-page-general.php:165
 msgid "Currency position"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:155
+#: includes/admin/settings/class-pe-settings-page-general.php:166
 msgid "This controls the position of the currency symbol."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:159
+#: includes/admin/settings/class-pe-settings-page-general.php:170
 msgid "Left"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:160
+#: includes/admin/settings/class-pe-settings-page-general.php:171
 msgid "Right"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:161
+#: includes/admin/settings/class-pe-settings-page-general.php:172
 msgid "Left with space"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:162
+#: includes/admin/settings/class-pe-settings-page-general.php:173
 msgid "Right with space"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:167
+#: includes/admin/settings/class-pe-settings-page-general.php:178
 msgid "Thousand separator"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:168
+#: includes/admin/settings/class-pe-settings-page-general.php:179
 msgid "This sets the thousand separator to display on prices."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:175
+#: includes/admin/settings/class-pe-settings-page-general.php:186
 msgid "Decimal separator"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:176
+#: includes/admin/settings/class-pe-settings-page-general.php:187
 msgid "This sets the decimal separator to display on prices."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:183
+#: includes/admin/settings/class-pe-settings-page-general.php:194
 msgid "Number of decimals"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:184
+#: includes/admin/settings/class-pe-settings-page-general.php:195
 msgid "This sets the number of decimals to display on prices."
 msgstr ""
 
@@ -1395,39 +1409,39 @@ msgstr ""
 msgid "Locations"
 msgstr ""
 
-#: includes/class-pe-ajax.php:151
+#: includes/class-pe-ajax.php:153
 msgid "You don't have permision to add or edit locations."
 msgstr ""
 
-#: includes/class-pe-ajax.php:166
+#: includes/class-pe-ajax.php:168
 msgid "You need to add a title."
 msgstr ""
 
-#: includes/class-pe-ajax.php:228
+#: includes/class-pe-ajax.php:230
 msgid "You don't have permision to delete locations."
 msgstr ""
 
-#: includes/class-pe-ajax.php:234
+#: includes/class-pe-ajax.php:236
 msgid "No id set"
 msgstr ""
 
-#: includes/class-pe-ajax.php:259
+#: includes/class-pe-ajax.php:261
 msgid "No ids set"
 msgstr ""
 
-#: includes/class-pe-ajax.php:295
+#: includes/class-pe-ajax.php:297
 msgid "You don't have permision to edit users."
 msgstr ""
 
-#: includes/class-pe-ajax.php:311
+#: includes/class-pe-ajax.php:313
 msgid "You need to enter a display name."
 msgstr ""
 
-#: includes/class-pe-ajax.php:315
+#: includes/class-pe-ajax.php:317
 msgid "You need to enter a valid email."
 msgstr ""
 
-#: includes/class-pe-install.php:59
+#: includes/class-pe-install.php:60
 msgid "Event organiser"
 msgstr ""
 
@@ -2375,7 +2389,7 @@ msgstr ""
 msgid "All events"
 msgstr ""
 
-#: templates/single-event/description.php:19
+#: templates/single-event/description.php:26
 msgid "Description"
 msgstr ""
 
@@ -2388,7 +2402,7 @@ msgid "Email"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://wordpresseventsplugin.com/"
+msgid "https://pressevents.xyz/"
 msgstr ""
 
 #. Description of the plugin/theme
