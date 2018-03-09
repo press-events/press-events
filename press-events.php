@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Press Events
- * Plugin URI: http://wordpresseventsplugin.com/
+ * Plugin URI: https://pressevents.xyz/
  * Description: An event managment plugin that helps you manage and share events.
  * Version: 1.0.1
  * Author: Burn Media Ltd

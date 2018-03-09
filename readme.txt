@@ -1,6 +1,6 @@
 === WordPress Event Calendar Plugin – Press Events ===
-Author URI: http://wordpresseventsplugin.com/
-Plugin URI: http://wordpresseventsplugin.com/
+Author URI: https://pressevents.xyz/
+Plugin URI: https://pressevents.xyz/
 Contributors: press-events
 Donate link:
 Tags: events, wordpress events, event calendar, event managment, event, press events

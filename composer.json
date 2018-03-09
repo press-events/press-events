@@ -1,7 +1,7 @@
 {
   "name": "press-events/press-events",
   "description": "An event managment plugin that helps you manage and share events.",
-  "homepage": "http://wordpresseventsplugin.com/",
+  "homepage": "https://pressevents.xyz/",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
   "require": {
