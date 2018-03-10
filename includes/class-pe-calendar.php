@@ -178,7 +178,7 @@ class PE_Calendar {
         $this->set_month_start_end();
         $this->set_week_start();
 
-        $this->weekday_names = PE()->date_i18n->get_weekdays( 'short' );
+        $this->weekday_names = Press_Events()->date_i18n->get_weekdays( 'short' );
         $this->array_rotate( $this->weekday_names, $this->week_start );
 	}
 

@@ -30,7 +30,7 @@ class PE_Countries {
 	 */
 	public function get_countries() {
 		if ( empty( $this->countries ) ) {
-			$this->countries = apply_filters( 'press_events_countries', include( PE()->plugin_path() . '/i18n/countries.php' ) );
+			$this->countries = apply_filters( 'press_events_countries', include( Press_Events()->plugin_path() . '/i18n/countries.php' ) );
 
             if ( apply_filters( 'press_events_sort_countries', true ) ) {
 				asort( $this->countries );

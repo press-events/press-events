@@ -29,7 +29,7 @@ final class Press_Events {
      *
      * @var string
      */
-    public $version = '1.0.1';
+    public $version = '1.0.2';
 
     /**
 	 * Countries instance.

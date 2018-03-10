@@ -3,7 +3,7 @@
  * Plugin Name: Press Events
  * Plugin URI: https://pressevents.xyz/
  * Description: An event managment plugin that helps you manage and share events.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Burn Media Ltd
  * Author URI: http://burnmedia.co.uk/
  * Requires at least: 4.5
@@ -33,7 +33,7 @@ include_once dirname( __FILE__ ) . '/includes/class-press-events.php';
  *
  * @since 1.0.0
  */
-function pe() {
+function Press_Events() {
 	return Press_Events::instance();
 }
-pe();
+Press_Events();

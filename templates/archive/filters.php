@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $calendar;
 
-$query_vars = PE()->query->get_query_vars();
+$query_vars = Press_Events()->query->get_query_vars();
 ?>
 
 <form method="get" class="archive-event-filters pe-row pe-row-center">

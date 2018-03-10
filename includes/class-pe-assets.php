@@ -276,7 +276,7 @@ class PE_Frontend_Assets {
 		switch ( $handle ) {
 			case 'pe-archive-event' :
 				$params = array(
-					'ajax_url' => PE()->ajax_url(),
+					'ajax_url' => Press_Events()->ajax_url(),
 					'pe_ajax_url' => PE_Ajax::get_endpoint( "%%endpoint%%" ),
 					'ajax_archive' => pe_get_option( 'ajax-archive', 'pe-general-events', 'on' )
 				);

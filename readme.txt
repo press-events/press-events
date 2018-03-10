@@ -6,7 +6,7 @@ Donate link:
 Tags: events, wordpress events, event calendar, event managment, event, press events
 Requires at least: 4.5
 Tested up to: 4.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 

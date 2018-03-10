@@ -110,10 +110,10 @@ function pe_generator_tag( $gen, $type ) {
  */
 function pe_taxonomy_url( $termlink, $term, $taxonomy ) {
 	if ( $taxonomy == 'pe_event_category' ) {
-        $query_vars = PE()->query->get_query_vars();
+        $query_vars = Press_Events()->query->get_query_vars();
 		$termlink = add_query_arg( $query_vars['archive_category'], $term->slug, get_post_type_archive_link( 'pe_event' ) );
 	} elseif ( $taxonomy == 'pe_event_tag' ) {
-        $query_vars = PE()->query->get_query_vars();
+        $query_vars = Press_Events()->query->get_query_vars();
 		$termlink = add_query_arg( $query_vars['archive_tag'], $term->slug, get_post_type_archive_link( 'pe_event' ) );
 	}
 
@@ -126,7 +126,7 @@ if ( ! function_exists( 'press_events_set_calendar_global' ) ) {
 	 */
 	function press_events_set_calendar_global( $vars = false ) {
 		if ( ! $vars ) {
-			$query_vars = PE()->query->get_query_vars();
+			$query_vars = Press_Events()->query->get_query_vars();
 			$vars = array(
 				'archive_type' => get_query_var( $query_vars['archive_type'] ) !== '' ? get_query_var( $query_vars['archive_type'] ) : pe_get_option( 'default-archive-view', 'pe-general-events', 'list' ),
 				'archive_query' => get_query_var( $query_vars['archive_query'] ),
