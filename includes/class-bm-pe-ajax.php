@@ -302,7 +302,7 @@ class BM_PE_Ajax {
 			'role' => 'event_organiser',
 			'user_login' => bm_pe_clean( $_POST['data']['display_name'] ),
 	    	'display_name' => bm_pe_clean( $_POST['data']['display_name'] ),
-	    	'user_email' => bm_pe_clean( $_POST['data']['user_email'] ),
+	    	'user_email' => sanitize_email( $_POST['data']['user_email'] ),
 	    	'user_url' => bm_pe_clean( $_POST['data']['user_url'] ),
 	    	'user_phone' => bm_pe_clean( $_POST['data']['user_phone'] ),
 			'user_pass' => null
