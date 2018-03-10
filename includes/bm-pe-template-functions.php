@@ -136,7 +136,7 @@ if ( ! function_exists( 'press_events_set_calendar_global' ) ) {
 			);
 		}
 
-		$GLOBALS['calendar'] = new PE_Calendar( $vars );
+		$GLOBALS['calendar'] = new BM_PE_Calendar( $vars );
 	}
 }
 

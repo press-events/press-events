@@ -181,25 +181,29 @@ final class BM_Press_Events {
 		 */
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-install.php' );
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-i18n.php' );
-        include_once( BM_PE_ABSPATH . 'includes/class-pe-datetime.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-datetime.php' );
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-post-types.php' ); // Registers post types.
-        include_once( BM_PE_ABSPATH . 'includes/pe-core-functions.php' );
-		include_once( BM_PE_ABSPATH . 'includes/class-pe-admin-bar.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-admin-bar.php' );
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-countries.php' );
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-query.php' );
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-event-query.php' ); // Event query.
         include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-date-i18n.php' );
-		include_once( BM_PE_ABSPATH . 'includes/class-pe-calendar.php' );
-		include_once( BM_PE_ABSPATH . 'includes/class-pe-ajax.php' );
-        include_once( BM_PE_ABSPATH . 'includes/pe-template-hooks.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-calendar.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-ajax.php' );
+        include_once( BM_PE_ABSPATH . 'includes/bm-pe-template-hooks.php' );
+
+        /**
+         * Functions
+         */
+        include_once( BM_PE_ABSPATH . 'includes/bm-pe-core-functions.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
 			include_once( BM_PE_ABSPATH . 'includes/admin/class-pe-admin.php' );
 		}
 
 		if ( $this->is_request( 'frontend' ) ) {
-			include_once( BM_PE_ABSPATH . 'includes/class-pe-template-loader.php' ); // Template Loader.
-            include_once( BM_PE_ABSPATH . 'includes/class-pe-assets.php' ); // Frontend Scripts.
+			include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-template-loader.php' ); // Template Loader.
+            include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-assets.php' ); // Frontend Scripts.
 		}
 
         $this->theme_support_includes();
@@ -209,7 +213,7 @@ final class BM_Press_Events {
 	 * Function used to Init Template Functions - This makes them pluggable by plugins and themes.
 	 */
 	public function include_template_functions() {
-        include_once( BM_PE_ABSPATH . 'includes/pe-template-functions.php' );
+        include_once( BM_PE_ABSPATH . 'includes/bm-pe-template-functions.php' );
 	}
 
     /**

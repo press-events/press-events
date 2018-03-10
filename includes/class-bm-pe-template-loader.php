@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-class PE_Template_Loader {
+class BM_PE_Template_Loader {
 
     /**
      * Has wp_head been triggered.
@@ -231,4 +231,4 @@ class PE_Template_Loader {
 
 }
 
-PE_Template_Loader::init();
+BM_PE_Template_Loader::init();

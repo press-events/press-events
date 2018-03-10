@@ -16,12 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Include core functions
  */
-include( BM_PE_ABSPATH . 'includes/pe-formatting-functions.php' );
-include( BM_PE_ABSPATH . 'includes/pe-conditional-functions.php' );
-include( BM_PE_ABSPATH . 'includes/pe-term-functions.php' );
-include( BM_PE_ABSPATH . 'includes/pe-event-functions.php' );
-include( BM_PE_ABSPATH . 'includes/pe-location-functions.php' );
-include( BM_PE_ABSPATH . 'includes/pe-organiser-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-conditional-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-event-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-formatting-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-location-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-organiser-functions.php' );
+include( BM_PE_ABSPATH . 'includes/bm-pe-term-functions.php' );
 
 /**
  * Get saved setting from given section

@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Admin_Bar
+ * BM_PE_Admin_Bar
  */
-class PE_Admin_Bar {
+class BM_PE_Admin_Bar {
 
 	public function __construct() {
 		add_action( 'admin_bar_menu', array( $this, 'add_pe_admin_menu' ), 80 );
@@ -71,4 +71,4 @@ class PE_Admin_Bar {
 	}
 
 }
-new PE_Admin_Bar();
+new BM_PE_Admin_Bar();

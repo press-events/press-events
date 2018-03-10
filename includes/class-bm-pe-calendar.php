@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 
-class PE_Calendar {
+class BM_PE_Calendar {
 
     /**
      * Current month

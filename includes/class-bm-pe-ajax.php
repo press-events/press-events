@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Ajax class.
+ * BM_PE_Ajax class.
  */
-class PE_Ajax {
+class BM_PE_Ajax {
 
 	/**
 	 * Hook in ajax handlers.
@@ -408,4 +408,4 @@ class PE_Ajax {
 
 }
 
-PE_Ajax::init();
+BM_PE_Ajax::init();

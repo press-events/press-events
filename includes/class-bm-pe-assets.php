@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Frontend_Assets Class.
+ * BM_PE_Frontend_Assets Class.
  */
-class PE_Frontend_Assets {
+class BM_PE_Frontend_Assets {
 
 	/**
 	 * Contains an array of script handles registered by Press Events.
@@ -277,7 +277,7 @@ class PE_Frontend_Assets {
 			case 'pe-archive-event' :
 				$params = array(
 					'ajax_url' => BM_Press_Events()->ajax_url(),
-					'pe_ajax_url' => PE_Ajax::get_endpoint( "%%endpoint%%" ),
+					'pe_ajax_url' => BM_PE_Ajax::get_endpoint( "%%endpoint%%" ),
 					'ajax_archive' => pe_get_option( 'ajax-archive', 'pe-general-events', 'on' )
 				);
 				break;
@@ -300,4 +300,4 @@ class PE_Frontend_Assets {
 
 }
 
-PE_Frontend_Assets::init();
+BM_PE_Frontend_Assets::init();
