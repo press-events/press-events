@@ -118,16 +118,16 @@ class BM_PE_Meta_Box_Event_Details {
 
 		$event_meta = array(
 			// date & time
-			'_all_day_event' => isset( $_POST['_all_day_event'] ) ? $_POST['_all_day_event'] : null,
+			'_all_day_event' => isset( $_POST['_all_day_event'] ) && is_string( $_POST['_all_day_event'] ) ? bm_pe_clean( $_POST['_all_day_event'] ) : null,
 			'_event_starts' => isset( $_POST['_event_start_date'] ) && isset( $_POST['_event_start_time'] ) ? strtotime( $_POST['_event_start_date'] .' '. ( $_POST['_all_day_event'] !== 'yes' ? $_POST['_event_start_time'] : null ) ) - $offset : null,
 			'_event_ends' => isset( $_POST['_event_end_date'] ) && isset( $_POST['_event_end_time'] ) ? strtotime( $_POST['_event_end_date'] .' '. ( $_POST['_all_day_event'] !== 'yes' ? $_POST['_event_end_time'] : null ) ) - $offset : null,
-			'_event_gmt_offset' => $_POST['gmt_offset'],
-			'_event_timezone_string' => $_POST['timezone_string'],
+			'_event_gmt_offset' => bm_pe_clean( $_POST['gmt_offset'] ),
+			'_event_timezone_string' => bm_pe_clean( $_POST['timezone_string'] ),
 			// location
-			'_event_location' => isset( $_POST['_event_location'] ) && $_POST['_event_location'] !== 'new' ? $_POST['_event_location'] : null,
-			'_show_google_map' => isset( $_POST['_show_google_map'] ) ? $_POST['_show_google_map'] : null,
+			'_event_location' => isset( $_POST['_event_location'] ) && $_POST['_event_location'] !== 'new' ? bm_pe_clean( $_POST['_event_location'] ) : null,
+			'_show_google_map' => isset( $_POST['_show_google_map'] ) && is_string( $_POST['_show_google_map'] ) ? bm_pe_clean( $_POST['_show_google_map'] ) : null,
 			// organisers
-			'_event_organisers' => isset( $_POST['_event_organisers'] ) ? $_POST['_event_organisers'] : null,
+			'_event_organisers' => isset( $_POST['_event_organisers'] ) ? bm_pe_clean( $_POST['_event_organisers'] ) : null,
 		);
 
 		// loop through $post_meta and save data

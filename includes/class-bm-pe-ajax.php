@@ -154,13 +154,13 @@ class BM_PE_Ajax {
 
 		// Get the form fields and sanitize.
 		$data = array(
-			'id' => $_POST['data']['id'],
-	    	'title' => sanitize_text_field( $_POST['data']['title'] ),
-	    	'address' => sanitize_text_field( $_POST['data']['address'] ),
-	    	'city' => sanitize_text_field( $_POST['data']['city'] ),
-	    	'postcode' => sanitize_text_field( $_POST['data']['postcode'] ),
-	    	'county' => sanitize_text_field( $_POST['data']['county'] ),
-	    	'country' => sanitize_text_field( $_POST['data']['country'] )
+			'id' => intval( $_POST['data']['id'] ),
+	    	'title' => bm_pe_clean( $_POST['data']['title'] ),
+	    	'address' => bm_pe_clean( $_POST['data']['address'] ),
+	    	'city' => bm_pe_clean( $_POST['data']['city'] ),
+	    	'postcode' => bm_pe_clean( $_POST['data']['postcode'] ),
+	    	'county' => bm_pe_clean( $_POST['data']['county'] ),
+	    	'country' => bm_pe_clean( $_POST['data']['country'] )
 		);
 
 		if ( empty( $data['title'] ) ) {
@@ -298,13 +298,13 @@ class BM_PE_Ajax {
 
 		// Get the form fields and sanitize.
 		$data = array(
-			'ID' => $_POST['data']['id'],
+			'ID' => intval( $_POST['data']['id'] ),
 			'role' => 'event_organiser',
-			'user_login' => sanitize_text_field( $_POST['data']['display_name'] ),
-	    	'display_name' => sanitize_text_field( $_POST['data']['display_name'] ),
-	    	'user_email' => sanitize_text_field( $_POST['data']['user_email'] ),
-	    	'user_url' => sanitize_text_field( $_POST['data']['user_url'] ),
-	    	'user_phone' => sanitize_text_field( $_POST['data']['user_phone'] ),
+			'user_login' => bm_pe_clean( $_POST['data']['display_name'] ),
+	    	'display_name' => bm_pe_clean( $_POST['data']['display_name'] ),
+	    	'user_email' => bm_pe_clean( $_POST['data']['user_email'] ),
+	    	'user_url' => bm_pe_clean( $_POST['data']['user_url'] ),
+	    	'user_phone' => bm_pe_clean( $_POST['data']['user_phone'] ),
 			'user_pass' => null
 		);
 
