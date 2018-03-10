@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Admin class.
+ * BM_PE_Admin class.
  */
-class PE_Admin {
+class BM_PE_Admin {
 
     /**
 	 * Constructor.
@@ -31,15 +31,14 @@ class PE_Admin {
 	 * Include any classes we need within admin.
 	 */
 	public function includes() {
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-assets.php' );
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-post-types.php' );
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-meta-boxes.php' );
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-settings.php' );
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-user-contacts.php' );
-		include_once( dirname( __FILE__ ) . '/class-pe-admin-user-contacts.php' );
+		include_once( dirname( __FILE__ ) . '/class-bm-pe-admin-assets.php' );
+		include_once( dirname( __FILE__ ) . '/class-bm-pe-admin-meta-boxes.php' );
+		include_once( dirname( __FILE__ ) . '/class-bm-pe-admin-post-types.php' );
+		include_once( dirname( __FILE__ ) . '/class-bm-pe-admin-settings.php' );
+		include_once( dirname( __FILE__ ) . '/class-bm-pe-admin-user-contacts.php' );
 
-		include_once( dirname( __FILE__ ) . '/pe-admin-functions.php' );
-		include_once( dirname( __FILE__ ) . '/pe-meta-box-functions.php' );
+		include_once( dirname( __FILE__ ) . '/bm-pe-admin-functions.php' );
+		include_once( dirname( __FILE__ ) . '/bm-pe-meta-box-functions.php' );
 	}
 
 	/**
@@ -52,7 +51,7 @@ class PE_Admin {
 
 		switch ( $screen->id ) {
 			case 'options-permalink' :
-				include( dirname( __FILE__ ) . '/class-pe-admin-permalink-settings.php' );
+				include( dirname( __FILE__ ) . '/class-bm-pe-admin-permalink-settings.php' );
 			break;
 		}
 	}
@@ -98,4 +97,4 @@ class PE_Admin {
 	}
 
 }
-return new PE_Admin();
+return new BM_PE_Admin();

@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Meta_Box_Event_Details class.
+ * BM_PE_Meta_Box_Event_Details class.
  */
-class PE_Meta_Box_Event_Details {
+class BM_PE_Meta_Box_Event_Details {
 
     /**
 	 * Output the metabox.

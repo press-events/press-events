@@ -11,16 +11,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'PE_Admin_List_Table', false ) ) {
-	include_once( 'abstract-class-pe-admin-list-table.php' );
+if ( ! class_exists( 'BM_PE_Admin_List_Table', false ) ) {
+	include_once( 'abstract-class-bm-pe-admin-list-table.php' );
 }
 
 if ( ! class_exists( 'PE_Admin_List_Table_Events', false ) ) :
 
 /**
- * PE_Admin_List_Table_Events Class.
+ * BM_PE_Admin_List_Table_Events Class.
  */
-class PE_Admin_List_Table_Events extends PE_Admin_List_Table {
+class BM_PE_Admin_List_Table_Events extends BM_PE_Admin_List_Table {
 
 	/**
 	 * Post type.

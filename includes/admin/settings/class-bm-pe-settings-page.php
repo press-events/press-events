@@ -12,16 +12,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Settings_Page class.
+ * BM_PE_Settings_Page class.
  */
-class PE_Settings_Page {
+class BM_PE_Settings_Page {
 
 	/**
 	 * Load the sections and fields
 	 */
 	public static function load_settings() {
-		PE_Settings_Page_General::init();
-		PE_Settings_Page_Integrations::init();
+		BM_PE_Settings_Page_General::init();
+		BM_PE_Settings_Page_Integrations::init();
 	}
 
 	/**

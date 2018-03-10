@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'PE_Admin_Assets', false ) ) :
 
 /**
- * PE_Admin_Assets Class.
+ * BM_PE_Admin_Assets Class.
  */
-class PE_Admin_Assets {
+class BM_PE_Admin_Assets {
 
 	/**
 	 * Hook in tabs.
@@ -141,4 +141,4 @@ class PE_Admin_Assets {
 
 endif;
 
-return new PE_Admin_Assets();
+return new BM_PE_Admin_Assets();

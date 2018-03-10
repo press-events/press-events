@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Admin_Meta_Boxes.
+ * BM_PE_Admin_Meta_Boxes.
  */
-class PE_Admin_Meta_Boxes {
+class BM_PE_Admin_Meta_Boxes {
 
 	/**
 	 * Is meta boxes saved once?
@@ -33,7 +33,7 @@ class PE_Admin_Meta_Boxes {
 		add_action( 'save_post', array( $this, 'save_meta_boxes' ), 1, 2 );
 
 		// Save Event Meta Boxes
-		add_action( 'press_events_process_pe_event_meta', 'PE_Meta_Box_Event_Details::save', 10, 2 );
+		add_action( 'press_events_process_pe_event_meta', 'BM_PE_Meta_Box_Event_Details::save', 10, 2 );
 	}
 
 	/**
@@ -41,7 +41,7 @@ class PE_Admin_Meta_Boxes {
 	 */
 	public function add_meta_boxes() {
 		// Events
-		add_meta_box( 'press-events-event-details', __( 'Event Details', 'press-events' ), 'PE_Meta_Box_Event_Details::output', 'pe_event', 'normal', 'high' );
+		add_meta_box( 'press-events-event-details', __( 'Event Details', 'press-events' ), 'BM_PE_Meta_Box_Event_Details::output', 'pe_event', 'normal', 'high' );
 	}
 
 	/**
@@ -83,4 +83,4 @@ class PE_Admin_Meta_Boxes {
 	}
 
 }
-new PE_Admin_Meta_Boxes();
+new BM_PE_Admin_Meta_Boxes();

@@ -57,23 +57,23 @@ class BM_PE_Autoloader {
 	}
 
 	/**
-	 * Auto-load PE classes on demand to reduce memory consumption.
+	 * Auto-load BM PE classes on demand to reduce memory consumption.
 	 *
 	 * @param string $class
 	 */
 	public function autoload( $class ) {
 		$class = strtolower( $class );
 
-		if ( 0 !== strpos( $class, 'pe_' ) ) {
+		if ( 0 !== strpos( $class, 'bm_pe_' ) ) {
 			return;
 		}
 
 		$file  = $this->get_file_name_from_class( $class );
 		$path  = '';
 
-		if ( 0 === strpos( $class, 'pe_meta_box' ) ) {
+		if ( 0 === strpos( $class, 'bm_pe_meta_box' ) ) {
 			$path = $this->include_path . 'admin/meta-boxes/';
-		} elseif ( 0 === strpos( $class, 'pe_settings' ) ) {
+		} elseif ( 0 === strpos( $class, 'bm_pe_settings' ) ) {
 			$path = $this->include_path . 'admin/settings/';
 		}
 

@@ -29,7 +29,7 @@ final class BM_Press_Events {
      *
      * @var string
      */
-    public $version = '1.0.2';
+    public $version = '1.0.4';
 
     /**
 	 * Countries instance.
@@ -198,7 +198,7 @@ final class BM_Press_Events {
         include_once( BM_PE_ABSPATH . 'includes/bm-pe-core-functions.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
-			include_once( BM_PE_ABSPATH . 'includes/admin/class-pe-admin.php' );
+			include_once( BM_PE_ABSPATH . 'includes/admin/class-bm-pe-admin.php' );
 		}
 
 		if ( $this->is_request( 'frontend' ) ) {

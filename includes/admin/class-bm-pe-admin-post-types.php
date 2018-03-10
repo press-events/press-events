@@ -14,11 +14,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'PE_Admin_Post_Types', false ) ) :
 
 /**
- * PE_Admin_Post_Types Class.
+ * BM_PE_Admin_Post_Types Class.
  *
  * Handles the edit posts views and some functionality on the edit post screen for WC post types.
  */
-class PE_Admin_Post_Types {
+class BM_PE_Admin_Post_Types {
 
     /**
      * Constructor.
@@ -48,8 +48,8 @@ class PE_Admin_Post_Types {
 
 		switch ( $screen_id ) {
 			case 'edit-pe_event' :
-				include_once( 'list-tables/class-pe-admin-list-table-events.php' );
-				new PE_Admin_List_Table_Events();
+				include_once( 'list-tables/class-bm-pe-admin-list-table-events.php' );
+				new BM_PE_Admin_List_Table_Events();
 				break;
 		}
 	}
@@ -58,4 +58,4 @@ class PE_Admin_Post_Types {
 
 endif;
 
-new PE_Admin_Post_Types();
+new BM_PE_Admin_Post_Types();

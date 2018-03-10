@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Admin_Settings
+ * BM_PE_Admin_Settings
  */
-class PE_Admin_Settings {
+class BM_PE_Admin_Settings {
 
 	/**
      * Settings tabs array
@@ -38,11 +38,11 @@ class PE_Admin_Settings {
     protected $settings_fields = array();
 
     public function __construct() {
-		PE_Settings_Page::load_settings();
+		BM_PE_Settings_Page::load_settings();
 
-		$this->set_tabs( PE_Settings_Page::get_settings_tabs() );
-		$this->set_sections( PE_Settings_Page::get_settings_sections() );
-		$this->set_fields( PE_Settings_Page::get_settings_fields() );
+		$this->set_tabs( BM_PE_Settings_Page::get_settings_tabs() );
+		$this->set_sections( BM_PE_Settings_Page::get_settings_sections() );
+		$this->set_fields( BM_PE_Settings_Page::get_settings_fields() );
 
 		add_action( 'admin_init', array($this, 'admin_init') );
         add_action( 'admin_menu', array($this, 'main_settings_page') );
@@ -58,7 +58,7 @@ class PE_Admin_Settings {
 		     __( 'Settings', 'press-events' ),
 		     'manage_options',
 		     'pe-settings',
-		     array( 'PE_Settings_Page', 'output' )
+		     array( 'BM_PE_Settings_Page', 'output' )
 		);
 	}
 
@@ -440,4 +440,4 @@ class PE_Admin_Settings {
     }
 
 }
-new PE_Admin_Settings();
+new BM_PE_Admin_Settings();

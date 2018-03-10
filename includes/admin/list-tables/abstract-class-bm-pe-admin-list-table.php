@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'PE_Admin_List_Table', false ) ) :
+if ( ! class_exists( 'BM_PE_Admin_List_Table', false ) ) :
 
 /**
- * PE_Admin_List_Table Class.
+ * BM_PE_Admin_List_Table Class.
  */
-abstract class PE_Admin_List_Table {
+abstract class BM_PE_Admin_List_Table {
 
 	/**
 	 * Post type.

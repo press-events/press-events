@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Settings_Page_General class.
+ * BM_PE_Settings_Page_General class.
  */
-class PE_Settings_Page_General {
+class BM_PE_Settings_Page_General {
 
 	/**
 	 * What is the ID of this tab
