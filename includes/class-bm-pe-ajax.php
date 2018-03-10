@@ -229,7 +229,7 @@ class BM_PE_Ajax {
 	        wp_send_json_error( __( 'You don\'t have permision to delete locations.', 'press-events' ) );
 	    }
 
-		$id = isset( $_POST['location_id'] ) ? $_POST['location_id'] : false;
+		$id = isset( $_POST['location_id'] ) ? intval( $_POST['location_id'] ) : false;
 
 		if ( ! $id ) {
 			wp_send_json_error( __( 'No id set', 'press-events' ) );
