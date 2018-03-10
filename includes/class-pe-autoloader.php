@@ -29,7 +29,7 @@ class PE_Autoloader {
 			spl_autoload_register( "__autoload" );
 		}
 		spl_autoload_register( array( $this, 'autoload' ) );
-		$this->include_path = untrailingslashit( plugin_dir_path( PE_PLUGIN_FILE ) ) . '/includes/';
+		$this->include_path = untrailingslashit( plugin_dir_path( BM_PE_PLUGIN_FILE ) ) . '/includes/';
 	}
 
 	/**

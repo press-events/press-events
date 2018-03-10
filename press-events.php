@@ -21,12 +21,12 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 // Used for referring to the plugin file or basename
-if ( !defined( 'PE_PLUGIN_FILE' ) ) {
-	define( 'PE_PLUGIN_FILE', __FILE__ );
+if ( !defined( 'BM_PE_PLUGIN_FILE' ) ) {
+	define( 'BM_PE_PLUGIN_FILE', __FILE__ );
 }
 
 // Include the main Press_Events class.
-include_once dirname( __FILE__ ) . '/includes/class-press-events.php';
+include_once dirname( __FILE__ ) . '/includes/class-bm-press-events.php';
 
 /**
  * Main instance of Press Events.
@@ -34,6 +34,6 @@ include_once dirname( __FILE__ ) . '/includes/class-press-events.php';
  * @since 1.0.0
  */
 function BM_Press_Events() {
-	return Press_Events::instance();
+	return BM_Press_Events::instance();
 }
 BM_Press_Events();

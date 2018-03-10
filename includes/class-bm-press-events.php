@@ -22,7 +22,7 @@ if ( !defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-final class Press_Events {
+final class BM_Press_Events {
 
     /**
      * Press Events version.
@@ -113,7 +113,7 @@ final class Press_Events {
 	 * @since 1.0.0
 	 */
 	private function init_hooks() {
-        register_activation_hook( PE_PLUGIN_FILE, array( 'PE_Install', 'init' ) );
+        register_activation_hook( BM_PE_PLUGIN_FILE, array( 'PE_Install', 'init' ) );
 		add_action( 'after_setup_theme', array( $this, 'setup_environment' ) );
         add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
 		add_action( 'init', array( $this, 'init' ), 0 );
@@ -123,8 +123,8 @@ final class Press_Events {
      * Define PE Constants.
      */
     private function define_constants() {
-        $this->define( 'PE_ABSPATH', dirname( PE_PLUGIN_FILE ) . '/' );
-        $this->define( 'PE_PLUGIN_BASENAME', plugin_basename( PE_PLUGIN_FILE ) );
+        $this->define( 'PE_ABSPATH', dirname( BM_PE_PLUGIN_FILE ) . '/' );
+        $this->define( 'PE_PLUGIN_BASENAME', plugin_basename( BM_PE_PLUGIN_FILE ) );
         $this->define( 'PE_VERSION', $this->version );
 		$this->define( 'PE_TEMPLATE_DEBUG_MODE', false );
     }
@@ -297,7 +297,7 @@ final class Press_Events {
 	 * @return string
 	 */
 	public function plugin_url() {
-		return untrailingslashit( plugins_url( '/', PE_PLUGIN_FILE ) );
+		return untrailingslashit( plugins_url( '/', BM_PE_PLUGIN_FILE ) );
 	}
 
     /**
@@ -306,7 +306,7 @@ final class Press_Events {
 	 * @return string
 	 */
 	public function plugin_path() {
-		return untrailingslashit( plugin_dir_path( PE_PLUGIN_FILE ) );
+		return untrailingslashit( plugin_dir_path( BM_PE_PLUGIN_FILE ) );
 	}
 
     /**

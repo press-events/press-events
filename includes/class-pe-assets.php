@@ -225,7 +225,7 @@ class PE_Frontend_Assets {
 	 * @return string
 	 */
 	private static function get_asset_url( $path ) {
-		return apply_filters( 'press_events_get_asset_url', plugins_url( $path, PE_PLUGIN_FILE ), $path );
+		return apply_filters( 'press_events_get_asset_url', plugins_url( $path, BM_PE_PLUGIN_FILE ), $path );
 	}
 
 	/**
