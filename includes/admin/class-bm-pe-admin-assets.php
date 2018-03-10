@@ -129,8 +129,8 @@ class BM_PE_Admin_Assets {
 				'get_locations_nonce' => wp_create_nonce( 'get-locations' ),
 				'get_organisers_nonce' => wp_create_nonce( 'get-organisers' ),
 				'update_organiser_nonce' => wp_create_nonce( 'update-organiser' ),
-				'date_format' => pe_date_format(),
-				'time_format' => pe_time_format(),
+				'date_format' => bm_pe_date_format(),
+				'time_format' => bm_pe_time_format(),
 				'date_vars' => $params['date_vars']
 			);
 			wp_localize_script( 'pe-admin-event-meta-boxes', 'pe_admin_meta_boxes_event', $params );

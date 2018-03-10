@@ -87,12 +87,12 @@ class BM_PE_Frontend_Assets {
 		self::register_scripts();
 		self::register_styles();
 
-		if ( is_event_archive() ) {
+		if ( is_bm_pe_event_archive() ) {
 			self::enqueue_script( 'chosen' );
 			self::enqueue_script( 'pe-archive-event' );
 		}
 
-		if ( is_event() ) {
+		if ( is_bm_pe_event() ) {
 			self::enqueue_style( 'magnific-popup' );
 			self::enqueue_script( 'pe-single-event' );
 		}
@@ -278,7 +278,7 @@ class BM_PE_Frontend_Assets {
 				$params = array(
 					'ajax_url' => BM_Press_Events()->ajax_url(),
 					'pe_ajax_url' => BM_PE_Ajax::get_endpoint( "%%endpoint%%" ),
-					'ajax_archive' => pe_get_option( 'ajax-archive', 'pe-general-events', 'on' )
+					'ajax_archive' => bm_pe_get_option( 'ajax-archive', 'pe-general-events', 'on' )
 				);
 				break;
 

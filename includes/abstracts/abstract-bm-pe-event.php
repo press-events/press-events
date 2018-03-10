@@ -99,12 +99,12 @@ class BM_PE_Event extends BM_PE_Data {
         $this->set_props( array(
             'title' => $post_object->post_title,
             'slug' => $post_object->post_name,
-            'date_created' => 0 < $post_object->post_date_gmt ? pe_string_to_timestamp( $post_object->post_date_gmt ) : null,
-			'date_modified' => 0 < $post_object->post_modified_gmt ? pe_string_to_timestamp( $post_object->post_modified_gmt ) : null,
+            'date_created' => 0 < $post_object->post_date_gmt ? bm_pe_string_to_timestamp( $post_object->post_date_gmt ) : null,
+			'date_modified' => 0 < $post_object->post_modified_gmt ? bm_pe_string_to_timestamp( $post_object->post_modified_gmt ) : null,
 			'status' => $post_object->post_status,
 			'description' => $post_object->post_content,
 			'short_description' => $post_object->post_content,
-			'comments_allowed' => 'open' == $post_object->comment_status && 'on' == pe_get_option( 'enable-comments', 'pe-general-events', 'on' ),
+			'comments_allowed' => 'open' == $post_object->comment_status && 'on' == bm_pe_get_option( 'enable-comments', 'pe-general-events', 'on' ),
 			'comment_count' => $post_object->comment_count,
         ) );
 
@@ -166,7 +166,7 @@ class BM_PE_Event extends BM_PE_Data {
      *
      * @since 1.0.0
      * @param string $context What the value is for. Valid values are view and edit.
-     * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+     * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_created( $context = 'view' ) {
     	return $this->get_prop( 'date_created', $context );
@@ -177,7 +177,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_date_modified( $context = 'view' ) {
 		return $this->get_prop( 'date_modified', $context );
@@ -265,7 +265,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_event_start( $context = 'view' ) {
 		return $this->get_prop( 'event_start', $context );
@@ -276,7 +276,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_event_end( $context = 'view' ) {
 		return $this->get_prop( 'event_end', $context );
@@ -368,7 +368,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 * @return bool
 	 */
 	public function show_google_map() {
-    	return apply_filters( 'press_events_show_google_map', true === $this->get_google_map() && '' !== pe_get_option( 'api-key', 'pe-integrations-google-maps' ), $this );
+    	return apply_filters( 'press_events_show_google_map', true === $this->get_google_map() && '' !== bm_pe_get_option( 'api-key', 'pe-integrations-google-maps' ), $this );
 	}
 
     /**
@@ -480,7 +480,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 * @param bool $comments_allowed Comments allowed or not.
 	 */
 	public function set_comments_allowed( $comments_allowed ) {
-		$this->set_prop( 'comments_allowed', pe_string_to_bool( $comments_allowed ) );
+		$this->set_prop( 'comments_allowed', bm_pe_string_to_bool( $comments_allowed ) );
 	}
 
     /**
@@ -500,7 +500,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 * @param bool $all_day_event All day event.
 	 */
 	public function set_all_day_event( $all_day_event ) {
-		$this->set_prop( 'all_day_event', pe_string_to_bool( $all_day_event ) );
+		$this->set_prop( 'all_day_event', bm_pe_string_to_bool( $all_day_event ) );
 	}
 
     /**
@@ -583,7 +583,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 * @param bool $google_map All day event.
 	 */
 	public function set_google_map( $google_map ) {
-        $google_map = pe_get_option( 'api-key', 'pe-integrations-google-maps', '' ) == '' ? false : pe_string_to_bool( $google_map );
+        $google_map = bm_pe_get_option( 'api-key', 'pe-integrations-google-maps', '' ) == '' ? false : bm_pe_string_to_bool( $google_map );
 		$this->set_prop( 'google_map', $google_map );
 	}
 
@@ -594,7 +594,7 @@ class BM_PE_Event extends BM_PE_Data {
 	 * @param bool $featured_event All day event.
 	 */
 	public function set_featured_event( $featured_event ) {
-		$this->set_prop( 'featured_event', pe_string_to_bool( $featured_event ) );
+		$this->set_prop( 'featured_event', bm_pe_string_to_bool( $featured_event ) );
 	}
 
 }

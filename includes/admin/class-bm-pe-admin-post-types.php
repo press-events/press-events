@@ -43,7 +43,7 @@ class BM_PE_Admin_Post_Types {
 		}
 
 		if ( ! empty( $_REQUEST['screen'] ) ) { // WPCS: input var ok.
-			$screen_id = pe_clean( wp_unslash( $_REQUEST['screen'] ) ); // WPCS: input var ok, sanitization ok.
+			$screen_id = bm_pe_clean( wp_unslash( $_REQUEST['screen'] ) ); // WPCS: input var ok, sanitization ok.
 		}
 
 		switch ( $screen_id ) {

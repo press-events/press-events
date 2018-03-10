@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $event;
 
-$event_starts = pe_format_datetime( $event->get_event_start() );
-$event_ends = pe_format_datetime( $event->get_event_end() );
+$event_starts = bm_pe_format_datetime( $event->get_event_start() );
+$event_ends = bm_pe_format_datetime( $event->get_event_end() );
 ?>
 
 <div class="event-title-date">

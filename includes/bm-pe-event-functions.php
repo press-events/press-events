@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Function for returning events
  */
-function pe_get_events( $args = array() ) {
+function bm_bm_pe_get_events( $args = array() ) {
 	$query = new BM_PE_Event_Query( $args );
 	return $query->get_events();
 }
@@ -26,7 +26,7 @@ function pe_get_events( $args = array() ) {
  *
  * @since 1.0.0
  */
-function pe_get_event( $event = null ) {
+function bm_pe_get_event( $event = null ) {
 	if ( ! did_action( 'press_events_init' ) ) {
 		return false;
 	}

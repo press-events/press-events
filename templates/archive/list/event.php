@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="event-time pe-row-item pe-row-item-shrink">
 
 		<?php if ( ! $event->is_all_day_event() ) { ?>
-			<time itemprop="startDate" datetime="<?php echo $event->get_event_start()->__toString(); ?>"><?php echo pe_format_datetime( $event->get_event_start(), pe_time_format() ); ?></time>
+			<time itemprop="startDate" datetime="<?php echo $event->get_event_start()->__toString(); ?>"><?php echo bm_pe_format_datetime( $event->get_event_start(), bm_pe_time_format() ); ?></time>
 		<?php } else { ?>
 			<time><?php _e( 'All day', 'press-events' ); ?></time>
 		<?php } ?>

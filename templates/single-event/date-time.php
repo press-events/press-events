@@ -23,27 +23,27 @@ global $event;
     <?php if ( $event->is_one_day_event() ) { ?>
 
         <time datetime="<?php echo $event->get_event_start()->__toString(); ?>">
-            <span class="start-date"><span><?php echo pe_format_datetime( $event->get_event_start(), pe_date_format() ); ?></span>
+            <span class="start-date"><span><?php echo bm_pe_format_datetime( $event->get_event_start(), bm_pe_date_format() ); ?></span>
 
             <?php if ( ! $event->is_all_day_event() ) { ?>
                 <br>
-                <span class="start-date-time"><?php echo pe_format_datetime( $event->get_event_start(), pe_time_format() ); ?></span></span>
-                <span class="end-date"><?php _e( 'to', 'press-events' ); ?> <span class="end-date-time"><?php echo pe_format_datetime( $event->get_event_end(), pe_time_format() ); ?></span></span>
+                <span class="start-date-time"><?php echo bm_pe_format_datetime( $event->get_event_start(), bm_pe_time_format() ); ?></span></span>
+                <span class="end-date"><?php _e( 'to', 'press-events' ); ?> <span class="end-date-time"><?php echo bm_pe_format_datetime( $event->get_event_end(), bm_pe_time_format() ); ?></span></span>
             <?php } ?>
         </time>
 
     <?php } else { ?>
 
         <time datetime="<?php echo $event->get_event_start()->__toString(); ?>">
-            <span class="start-date"><span><?php echo pe_format_datetime( $event->get_event_start(), pe_date_format() ); ?></span><?php if ( ! $event->is_all_day_event() ) { ?>, <span class="start-date-time"><?php echo pe_format_datetime( $event->get_event_start(), pe_time_format() ); ?></span><?php } ?></span>
-            <span class="end-date"><?php _e( 'to', 'press-events' ); ?> <span><?php echo pe_format_datetime( $event->get_event_end(), pe_date_format() ); ?></span><?php if ( ! $event->is_all_day_event() ) { ?>, <span class="end-date-time"><?php echo pe_format_datetime( $event->get_event_end(), pe_time_format() ); ?></span><?php } ?></span>
+            <span class="start-date"><span><?php echo bm_pe_format_datetime( $event->get_event_start(), bm_pe_date_format() ); ?></span><?php if ( ! $event->is_all_day_event() ) { ?>, <span class="start-date-time"><?php echo bm_pe_format_datetime( $event->get_event_start(), bm_pe_time_format() ); ?></span><?php } ?></span>
+            <span class="end-date"><?php _e( 'to', 'press-events' ); ?> <span><?php echo bm_pe_format_datetime( $event->get_event_end(), bm_pe_date_format() ); ?></span><?php if ( ! $event->is_all_day_event() ) { ?>, <span class="end-date-time"><?php echo bm_pe_format_datetime( $event->get_event_end(), bm_pe_time_format() ); ?></span><?php } ?></span>
         </time>
 
     <?php } ?>
 
     <?php
 		// Timezone
-		if ( pe_timezone_offset() == pe_event_timezone_offset( $event->get_id() ) ) {
+		if ( bm_pe_timezone_offset() == pe_event_timezone_offset( $event->get_id() ) ) {
 
 			$tzstring = '';
 
@@ -68,7 +68,7 @@ global $event;
 		}
 
 		if ( $tzstring ) { ?>
-			<span class="timezone"><?php echo $current_offset == '' ? $tzstring : pe_offset_value_to_name( $current_offset ); ?></span>
+			<span class="timezone"><?php echo $current_offset == '' ? $tzstring : bm_pe_offset_value_to_name( $current_offset ); ?></span>
 		<?php
 		}
 	?>

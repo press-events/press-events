@@ -23,11 +23,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="input-wrapper">
 			<!-- Event Starts -->
 			<?php
-				$date_format = pe_date_format();
-				$time_format = pe_time_format();
+				$date_format = bm_pe_date_format();
+				$time_format = bm_pe_time_format();
 
-				$start_date = pe_format_datetime( $event->get_event_start( 'edit' ), $date_format );
-				$start_time = pe_format_datetime( $event->get_event_start( 'edit' ), $time_format );
+				$start_date = bm_pe_format_datetime( $event->get_event_start( 'edit' ), $date_format );
+				$start_time = bm_pe_format_datetime( $event->get_event_start( 'edit' ), $time_format );
 			?>
 
 			<div class="event-time-wrap left">
@@ -68,8 +68,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="event-time-wrap left">
 				<!-- Event Ends -->
 				<?php
-					$end_time = pe_format_datetime( $event->get_event_end( 'edit' ), $time_format );
-					$end_date = pe_format_datetime( $event->get_event_end( 'edit' ), $date_format );
+					$end_time = bm_pe_format_datetime( $event->get_event_end( 'edit' ), $time_format );
+					$end_date = bm_pe_format_datetime( $event->get_event_end( 'edit' ), $date_format );
 				?>
 
 				<!-- Time input -->
@@ -132,7 +132,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$current_offset = '';
 				}
 			?>
-			<a id="timezone-toggle">Timezone: <?php echo $current_offset == '' ? $tzstring : pe_offset_value_to_name( $current_offset ); ?></a>
+			<a id="timezone-toggle">Timezone: <?php echo $current_offset == '' ? $tzstring : bm_pe_offset_value_to_name( $current_offset ); ?></a>
 
 			<select id="_event_timezone" name="_event_timezone">
 				<?php echo wp_timezone_choice( $tzstring, get_user_locale() ); ?>

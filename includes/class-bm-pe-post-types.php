@@ -48,7 +48,7 @@ class BM_PE_Post_types {
 
 		do_action( 'press_events_register_taxonomy' );
 
-		$permalinks = pe_get_permalink_structure();
+		$permalinks = bm_pe_get_permalink_structure();
 
 		register_taxonomy( 'pe_event_category', array( 'pe_event' ),
 			apply_filters( 'press_events_taxonomy_args_event_category', array(
@@ -114,7 +114,7 @@ class BM_PE_Post_types {
 	public static function register_post_types() {
 		do_action( 'press_events_register_post_type' );
 
-		$permalinks = pe_get_permalink_structure();
+		$permalinks = bm_pe_get_permalink_structure();
 
 		register_post_type( 'pe_event',
 			apply_filters( 'press_events_register_post_type_event', array(

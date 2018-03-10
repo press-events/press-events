@@ -42,7 +42,7 @@ class BM_PE_Ajax {
 	 */
 	public static function define_ajax() {
 		if ( ! empty( $_GET['pe-ajax'] ) ) {
-			pe_maybe_define_constant( 'BM_PE_DOING_AJAX', true );
+			bm_pe_maybe_define_constant( 'BM_PE_DOING_AJAX', true );
 
 			@ini_set( 'display_errors', 0 ); // Turn off display_errors during AJAX events to prevent malformed JSON
 
@@ -110,7 +110,7 @@ class BM_PE_Ajax {
 	 */
 	public static function feature_event() {
 		if ( current_user_can( 'edit_pe_events' ) && check_admin_referer( 'press-events-feature-event' ) ) {
-			$event = pe_get_event( absint( $_GET['event_id'] ) );
+			$event = bm_pe_get_event( absint( $_GET['event_id'] ) );
 
 			if ( $event ) {
 				update_post_meta( $event->get_id(), '_featured_event', ! $event->is_featured() );
@@ -375,7 +375,7 @@ class BM_PE_Ajax {
 		$query_vars = BM_Press_Events()->query->get_query_vars();
 		$data = array(
 			'archive_query' => get_query_var( $query_vars['archive_query'] ),
-			'archive_type' => get_query_var( $query_vars['archive_type'] ) !== '' ? get_query_var( $query_vars['archive_type'] ) : pe_get_option( 'archive-type', 'pe-general-events', 'list' ),
+			'archive_type' => get_query_var( $query_vars['archive_type'] ) !== '' ? get_query_var( $query_vars['archive_type'] ) : bm_pe_get_option( 'archive-type', 'pe-general-events', 'list' ),
 			'archive_month' => get_query_var( $query_vars['archive_month'] ),
 			'archive_category' => get_query_var( $query_vars['archive_category'] ),
 			'archive_tag' => get_query_var( $query_vars['archive_tag'] )
@@ -388,7 +388,7 @@ class BM_PE_Ajax {
 		// Get HTML
 		ob_start();
 
-		pe_get_template_part( 'content-archive', $calendar->get_type() );
+		bm_bm_pe_get_template_part( 'content-archive', $calendar->get_type() );
 		$html = ob_get_contents();
 
 		ob_end_clean();

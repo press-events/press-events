@@ -145,9 +145,9 @@ class BM_PE_Settings_Page_General {
 			),
 		);
 
-		$currency_options = pe_get_currencies();
+		$currency_options = bm_pe_get_currencies();
 		foreach ( $currency_options as $code => $name ) {
-			$currency_options[ $code ] = $name . ' (' . pe_get_currency_symbol( $code ) . ')';
+			$currency_options[ $code ] = $name . ' (' . bm_pe_get_currency_symbol( $code ) . ')';
 		}
 
 		// -currency
@@ -167,10 +167,10 @@ class BM_PE_Settings_Page_General {
 				'type' => 'select',
 				'default' => 'left',
 				'options' => array(
-					'left' => __( 'Left', 'press-events' ) . ' (' . pe_get_currency_symbol() . '&#x200e;99.99)',
-					'right' => __( 'Right', 'press-events' ) . ' (99.99' . pe_get_currency_symbol() . '&#x200f;)',
-					'left_space' => __( 'Left with space', 'press-events' ) . ' (' . pe_get_currency_symbol() . '&#x200e;&nbsp;99.99)',
-					'right_space' => __( 'Right with space', 'press-events' ) . ' (99.99&nbsp;' . pe_get_currency_symbol() . '&#x200f;)',
+					'left' => __( 'Left', 'press-events' ) . ' (' . bm_pe_get_currency_symbol() . '&#x200e;99.99)',
+					'right' => __( 'Right', 'press-events' ) . ' (99.99' . bm_pe_get_currency_symbol() . '&#x200f;)',
+					'left_space' => __( 'Left with space', 'press-events' ) . ' (' . bm_pe_get_currency_symbol() . '&#x200e;&nbsp;99.99)',
+					'right_space' => __( 'Right with space', 'press-events' ) . ' (99.99&nbsp;' . bm_pe_get_currency_symbol() . '&#x200f;)',
 				)
 			),
 			array(

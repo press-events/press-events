@@ -25,7 +25,7 @@ global $calendar;
 
 		<div class="press-events-archive">
 
-			<?php pe_get_template_part( 'content-archive', $calendar->get_type() ); ?>
+			<?php bm_bm_pe_get_template_part( 'content-archive', $calendar->get_type() ); ?>
 
 		</div>
 

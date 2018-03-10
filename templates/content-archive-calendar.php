@@ -38,7 +38,7 @@ global $calendar;
 
 						<?php foreach ( $calendar->get_calendar_days() as $day ) { ?>
 
-							<?php pe_get_template( 'archive/calendar/day.php', array(
+							<?php bm_pe_get_template( 'archive/calendar/day.php', array(
 					            'class' => isset( $day['class'] ) ? $day['class'] : null,
 					            'datetime' => isset( $day['datetime'] ) ? $day['datetime'] : null,
 					            'events' => isset( $day['events'] ) ? $day['events'] : null,

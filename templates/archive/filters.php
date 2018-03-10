@@ -76,7 +76,7 @@ $query_vars = BM_Press_Events()->query->get_query_vars();
 
 		<?php
 			// Get archive views
-	  		$archive_types = pe_get_option( 'archive-views', 'pe-general-events', array( 'list' => 'List', 'calendar' => 'Calendar' ) );
+	  		$archive_types = bm_pe_get_option( 'archive-views', 'pe-general-events', array( 'list' => 'List', 'calendar' => 'Calendar' ) );
 
 			if ( count($archive_types) > 1 ) { ?>
 

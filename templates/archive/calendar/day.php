@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<?php foreach ( $events as $event ) { ?>
 
-					<?php pe_get_template( 'archive/calendar/event.php', array(
+					<?php bm_pe_get_template( 'archive/calendar/event.php', array(
 			            'event' => $event
 			        ) ); ?>
 

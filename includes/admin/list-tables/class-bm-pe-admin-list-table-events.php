@@ -45,7 +45,7 @@ class BM_PE_Admin_List_Table_Events extends BM_PE_Admin_List_Table {
 	 */
 	protected function prepare_row_data( $post_id ) {
 		if ( empty( $this->object ) || $this->object->get_id() !== $post_id ) {
-			$this->object = pe_get_event( $post_id );
+			$this->object = bm_pe_get_event( $post_id );
 		}
 	}
 
@@ -101,15 +101,15 @@ class BM_PE_Admin_List_Table_Events extends BM_PE_Admin_List_Table {
 	 */
 	protected function render_event_time_column() {
 		// Event starts
-		$start_day = pe_format_datetime( $this->object->get_event_start(), pe_date_format() );
-		$start_time = pe_format_datetime( $this->object->get_event_start(), pe_time_format() );
+		$start_day = bm_pe_format_datetime( $this->object->get_event_start(), bm_pe_date_format() );
+		$start_time = bm_pe_format_datetime( $this->object->get_event_start(), bm_pe_time_format() );
 
 		// Event ends
-		$end_day = pe_format_datetime( $this->object->get_event_end(), pe_date_format() );
-		$end_time = pe_format_datetime( $this->object->get_event_end(), pe_time_format() );
+		$end_day = bm_pe_format_datetime( $this->object->get_event_end(), bm_pe_date_format() );
+		$end_time = bm_pe_format_datetime( $this->object->get_event_end(), bm_pe_time_format() );
 
 		// Timezone
-		if ( pe_timezone_offset() == pe_event_timezone_offset( $this->object->get_id() ) ) {
+		if ( bm_pe_timezone_offset() == pe_event_timezone_offset( $this->object->get_id() ) ) {
 
 			$tzstring = '';
 
@@ -147,7 +147,7 @@ class BM_PE_Admin_List_Table_Events extends BM_PE_Admin_List_Table {
 		}
 
 		if ( $tzstring ) {
-			$timezone = $current_offset == '' ? $tzstring : pe_offset_value_to_name( $current_offset );
+			$timezone = $current_offset == '' ? $tzstring : bm_pe_offset_value_to_name( $current_offset );
 			echo '<small><b>'. __( 'Timezone', 'press-events' ) .':</b> '. $timezone .'</small>';
 		}
 	}

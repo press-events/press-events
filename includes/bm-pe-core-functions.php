@@ -26,7 +26,7 @@ include( BM_PE_ABSPATH . 'includes/bm-pe-term-functions.php' );
 /**
  * Get saved setting from given section
  */
-function pe_get_option( $option, $section, $default = '' ) {
+function bm_pe_get_option( $option, $section, $default = '' ) {
 	$options = get_option( $section );
 
     if ( isset( $options[$option] ) ) {
@@ -42,7 +42,7 @@ function pe_get_option( $option, $section, $default = '' ) {
  * @since  1.0.0
  * @return array
  */
-function pe_get_permalink_structure() {
+function bm_pe_get_permalink_structure() {
 	$saved_permalinks = (array) get_option( 'press_events_permalinks', array() );
 
 	$permalinks = wp_parse_args( array_filter( $saved_permalinks ), array(
@@ -67,7 +67,7 @@ function pe_get_permalink_structure() {
 /**
  * Get event template parts
  */
-function pe_get_template_part( $slug, $name = '' ) {
+function bm_bm_pe_get_template_part( $slug, $name = '' ) {
 	$template = '';
 
 	// Look in yourtheme/slug-name.php and yourtheme/press-events/slug-name.php
@@ -86,7 +86,7 @@ function pe_get_template_part( $slug, $name = '' ) {
 	}
 
 	// Allow 3rd party plugins to filter template file from their plugin.
-	$template = apply_filters( 'pe_get_template_part', $template, $slug, $name );
+	$template = apply_filters( 'bm_bm_pe_get_template_part', $template, $slug, $name );
 
 	if ( $template ) {
 		load_template( $template, false );
@@ -102,19 +102,19 @@ function pe_get_template_part( $slug, $name = '' ) {
  * @param string $template_path (default: '')
  * @param string $default_path (default: '')
  */
-function pe_get_template( $template_name, $args = array(), $template_path = '', $default_path = '' ) {
+function bm_pe_get_template( $template_name, $args = array(), $template_path = '', $default_path = '' ) {
 	if ( !empty( $args ) && is_array( $args ) ) {
 		extract( $args );
 	}
 
-	$located = pe_locate_template( $template_name, $template_path, $default_path );
+	$located = bm_pe_locate_template( $template_name, $template_path, $default_path );
 
 	if ( ! file_exists( $located ) ) {
 		return false;
 	}
 
 	// Allow 3rd party plugin filter template file from their plugin.
-	$located = apply_filters( 'pe_get_template', $located, $template_name, $args, $template_path, $default_path );
+	$located = apply_filters( 'bm_pe_get_template', $located, $template_name, $args, $template_path, $default_path );
 
 	do_action( 'press_events_before_template_part', $template_name, $template_path, $located, $args );
 
@@ -138,7 +138,7 @@ function pe_get_template( $template_name, $args = array(), $template_path = '', 
  * @param string $default_path (default: '')
  * @return string
  */
-function pe_locate_template( $template_name, $template_path = '', $default_path = '' ) {
+function bm_pe_locate_template( $template_name, $template_path = '', $default_path = '' ) {
 	if ( ! $template_path ) {
 		$template_path = BM_Press_Events()->template_path();
 	}
@@ -168,8 +168,8 @@ function pe_locate_template( $template_name, $template_path = '', $default_path 
  *
  * @return string
  */
-function pe_get_currency() {
-	return apply_filters( 'press_events_currency', pe_get_option( 'code', 'pe-general-currency', 'GBP' ) );
+function bm_pe_get_currency() {
+	return apply_filters( 'press_events_currency', bm_pe_get_option( 'code', 'pe-general-currency', 'GBP' ) );
 }
 
 /**
@@ -177,7 +177,7 @@ function pe_get_currency() {
  *
  * @return array
  */
-function pe_get_currencies() {
+function bm_pe_get_currencies() {
 	static $currencies;
 
 	if ( !isset( $currencies ) ) {
@@ -360,12 +360,12 @@ function pe_get_currencies() {
  * @param string $currency Currency. (default: '').
  * @return string
  */
-function pe_get_currency_symbol( $currency = '' ) {
+function bm_pe_get_currency_symbol( $currency = '' ) {
 	if ( ! $currency ) {
-		$currency = pe_get_currency();
+		$currency = bm_pe_get_currency();
 	}
 
-	$symbols = apply_filters( 'press-events_currency_symbols', array(
+	$symbols = apply_filters( 'press_events_currency_symbols', array(
 		'AED' => '&#x62f;.&#x625;',
 		'AFN' => '&#x60b;',
 		'ALL' => 'L',
@@ -533,7 +533,7 @@ function pe_get_currency_symbol( $currency = '' ) {
 
 	$currency_symbol = isset( $symbols[ $currency ] ) ? $symbols[ $currency ] : '';
 
-	return apply_filters( 'press-events_currency_symbol', $currency_symbol, $currency );
+	return apply_filters( 'press_events_currency_symbol', $currency_symbol, $currency );
 }
 
 /**
@@ -543,7 +543,7 @@ function pe_get_currency_symbol( $currency = '' ) {
  * @param string $name  Constant name.
  * @param string $value Value.
  */
-function pe_maybe_define_constant( $name, $value ) {
+function bm_pe_maybe_define_constant( $name, $value ) {
 	if ( ! defined( $name ) ) {
 		define( $name, $value );
 	}

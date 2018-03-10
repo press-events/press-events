@@ -38,7 +38,7 @@ $location = $event->get_event_location();
 	<div class="event-location-map">
 
 		<a href="https://www.google.com/maps/search/?api=1&amp;query=<?php echo urlencode( $location->get_full_address() ); ?>" class="location-map-link" target="_blank noreferrer noopener">
-			<img src="https://maps.google.com/maps/api/staticmap?zoom=17&amp;scale=2&amp;size=480x300&amp;markers=color%3Ared%7Csize%3Alarge%7C<?php echo urlencode( $location->get_full_address() ); ?>&amp;sensor=false&amp;key=<?php echo pe_get_option( 'api-key', 'pe-integrations-google-maps' ); ?>" class="google-map" alt="Location image of event venue">
+			<img src="https://maps.google.com/maps/api/staticmap?zoom=17&amp;scale=2&amp;size=480x300&amp;markers=color%3Ared%7Csize%3Alarge%7C<?php echo urlencode( $location->get_full_address() ); ?>&amp;sensor=false&amp;key=<?php echo bm_pe_get_option( 'api-key', 'pe-integrations-google-maps' ); ?>" class="google-map" alt="Location image of event venue">
 		</a>
 
 	</div>

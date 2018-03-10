@@ -69,7 +69,7 @@ class PE_Admin_Permalink_Settings {
 			'press-events-permalink' // settings section
 		);
 
-		$this->permalinks = pe_get_permalink_structure();
+		$this->permalinks = ();
 	}
 
 	/**

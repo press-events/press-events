@@ -42,7 +42,7 @@ class BM_PE_Template_Loader {
 	 */
 	public static function template_loader( $template ) {
 		if ( is_BM_Press_Events() ) {
-            $template = locate_template( pe_get_option( 'event-template', 'pe-general', 'page.php' ) );
+            $template = locate_template( bm_pe_get_option( 'event-template', 'pe-general', 'page.php' ) );
             add_action( 'loop_start', array( __CLASS__, 'event_template_loader' ) );
         }
 
@@ -85,11 +85,11 @@ class BM_PE_Template_Loader {
 
         ob_start();
 
-        if ( is_event() ) {
-            pe_get_template( 'single-event.php' );
-        } elseif ( is_event_archive() || is_event_taxonomy() ) {
+        if ( is_bm_pe_event() ) {
+            bm_pe_get_template( 'single-event.php' );
+        } elseif ( is_bm_pe_event_archive() || is_bm_pe_event_taxonomy() ) {
             do_action( 'press_events_before_get_calendar' );
-            pe_get_template( 'archive-event.php' );
+            bm_pe_get_template( 'archive-event.php' );
         }
 
         $contents = ob_get_clean();
@@ -173,7 +173,7 @@ class BM_PE_Template_Loader {
 
         global $wp_query;
 
-        if ( $wp_query->is_main_query() && is_event_page() ) {
+        if ( $wp_query->is_main_query() && is_bm_pe_event_page() ) {
     		$GLOBALS['post'] = self::blank_post_object();
     		$wp_query->posts[] = self::blank_post_object();
     		$wp_query->post_count = count( $wp_query->posts );
@@ -225,7 +225,7 @@ class BM_PE_Template_Loader {
         global $event;
 
         if ( ! $event->comments_open() ) {
-            return pe_locate_template( 'single-event/no-comments.php' );
+            return bm_pe_locate_template( 'single-event/no-comments.php' );
         }
     }
 

@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php pe_get_template_part( 'content', 'single-event' ); ?>
+			<?php bm_bm_pe_get_template_part( 'content', 'single-event' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 

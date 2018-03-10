@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="archive-event-day">
 
-	<small class="event-day-title" datetime="<?php echo date('Y-m-d', $datetime); ?>"><?php echo date( pe_date_format(), $datetime ); ?></small>
+	<small class="event-day-title" datetime="<?php echo date('Y-m-d', $datetime); ?>"><?php echo date( bm_pe_date_format(), $datetime ); ?></small>
 
 	<?php if ( ! empty( $events ) ) { ?>
 
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php foreach ( $events as $event ) { ?>
 
-				<?php pe_get_template( 'archive/list/event.php', array(
+				<?php bm_pe_get_template( 'archive/list/event.php', array(
 		            'event' => $event
 		        ) ); ?>
 

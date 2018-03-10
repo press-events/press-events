@@ -56,7 +56,7 @@ class BM_PE_Event_Query extends BM_PE_Object_Query {
 		$results = new WP_Query( $args );
 
 		if ( $results->posts ) {
-            $results->posts = array_map( 'pe_get_event', $results->posts );
+            $results->posts = array_map( 'bm_pe_get_event', $results->posts );
         }
 
 		return apply_filters( 'press_events_event_object_query', $results->posts, $args );

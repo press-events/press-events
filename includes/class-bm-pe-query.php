@@ -125,7 +125,7 @@ class BM_PE_Query {
 		// Query vars that affect posts shown.
 		$query->set( 'meta_query', $this->get_meta_query( $query->get( 'meta_query' ), true ) );
 		$query->set( 'tax_query', $this->get_tax_query( $query->get( 'tax_query' ), true ) );
-		$query->set( 'pe_query', 'event_query' );
+		$query->set( 'bm_pe_query', 'event_query' );
 
 		self::$event_query = $query;
 

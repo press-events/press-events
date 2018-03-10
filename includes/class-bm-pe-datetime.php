@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class PE_DateTime extends DateTime {
+class BM_PE_DateTime extends DateTime {
 
 	/**
 	 * UTC Offset, if needed. Only used when a timezone is not set. When

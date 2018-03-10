@@ -17,7 +17,7 @@ class BM_PE_Calendar {
     /**
      * Current month
      *
-     * @var object PE_DateTime
+     * @var object BM_PE_DateTime
      */
     public $current_month;
 
@@ -144,12 +144,12 @@ class BM_PE_Calendar {
      */
     private function set_calendar_args( $args ) {
         $defualts = array(
-            'archive_type' => pe_get_option( 'archive-type', 'pe-general-events', 'list' ),
+            'archive_type' => bm_pe_get_option( 'archive-type', 'pe-general-events', 'list' ),
             'archive_query' => '',
             'archive_month' => 'now',
             'archive_category' => '',
             'archive_tag' => '',
-            'timezone_offset' => pe_timezone_offset(),
+            'timezone_offset' => bm_pe_timezone_offset(),
             'week_start' => 0,
         );
 
@@ -165,12 +165,12 @@ class BM_PE_Calendar {
         // set the date
         if( $this->calendar_args['archive_month'] ) {
             try {
-                $this->current_month = new PE_DateTime( $this->calendar_args['archive_month'] );
+                $this->current_month = new BM_PE_DateTime( $this->calendar_args['archive_month'] );
             } catch (Exception $e) {
-                $this->current_month = new PE_DateTime( 'now' );
+                $this->current_month = new BM_PE_DateTime( 'now' );
             }
 		} else {
-			$this->current_month = new PE_DateTime( 'now' );
+			$this->current_month = new BM_PE_DateTime( 'now' );
 		}
 
         $this->current_month->set_utc_offset( $this->calendar_args['timezone_offset'] );
@@ -213,7 +213,7 @@ class BM_PE_Calendar {
 	 * Get all the events within this month
      */
     private function set_events() {
-        $this->events = pe_get_events( array(
+        $this->events = bm_bm_pe_get_events( array(
             's' => $this->calendar_args['archive_query'],
             'tax_query' => $this->get_tax_query(),
             'meta_query' => $this->get_meta_query()

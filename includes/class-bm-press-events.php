@@ -227,7 +227,7 @@ final class BM_Press_Events {
         if ( $this->is_active_theme( $theme_support ) ) {
 			switch ( get_template() ) {
 				case 'twentyseventeen':
-					include_once( BM_PE_ABSPATH . 'includes/theme-support/class-pe-twenty-seventeen.php' );
+					include_once( BM_PE_ABSPATH . 'includes/theme-support/class-bm-pe-twenty-seventeen.php' );
 					break;
 			}
 		}
@@ -273,7 +273,7 @@ final class BM_Press_Events {
 
         $this->countries = new BM_PE_Countries(); // Countries class.
         $this->date_i18n = new BM_PE_Date_i18n(); // Date i18n class.
-        $this->query = new BM_PE_Query(); // PE_Query
+        $this->query = new BM_PE_Query(); // BM_PE_Query
 
 		// Init action.
 		do_action( 'press_events_init' );

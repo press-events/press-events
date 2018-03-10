@@ -92,8 +92,8 @@ class BM_PE_Event_Location extends BM_PE_Data {
         $this->set_props( array(
             'title' => $post_object->post_title,
             'slug' => $post_object->post_name,
-            'date_created' => 0 < $post_object->post_date_gmt ? pe_string_to_timestamp( $post_object->post_date_gmt ) : null,
-			'date_modified' => 0 < $post_object->post_modified_gmt ? pe_string_to_timestamp( $post_object->post_modified_gmt ) : null,
+            'date_created' => 0 < $post_object->post_date_gmt ? bm_pe_string_to_timestamp( $post_object->post_date_gmt ) : null,
+			'date_modified' => 0 < $post_object->post_modified_gmt ? bm_pe_string_to_timestamp( $post_object->post_modified_gmt ) : null,
 			'status' => $post_object->post_status,
         ) );
 
@@ -152,7 +152,7 @@ class BM_PE_Event_Location extends BM_PE_Data {
      *
      * @since 1.0.0
      * @param string $context What the value is for. Valid values are view and edit.
-     * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+     * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_created( $context = 'view' ) {
     	return $this->get_prop( 'date_created', $context );
@@ -163,7 +163,7 @@ class BM_PE_Event_Location extends BM_PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_DateTime|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_DateTime|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_date_modified( $context = 'view' ) {
 		return $this->get_prop( 'date_modified', $context );

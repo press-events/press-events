@@ -32,7 +32,7 @@ global $calendar;
 				foreach ( $calendar->get_calendar_days() as $day ) {
 					if ( ! isset( $day['events'] ) || empty( $day['events'] ) ) continue;
 
-					pe_get_template( 'archive/list/day.php', array(
+					bm_pe_get_template( 'archive/list/day.php', array(
 						'datetime' => isset( $day['datetime'] ) ? $day['datetime'] : null,
 						'events' => isset( $day['events'] ) ? $day['events'] : null,
 					) );

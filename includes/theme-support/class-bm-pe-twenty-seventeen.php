@@ -10,7 +10,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class PE_Twenty_Seventeen {
+class BM_PE_Twenty_Seventeen {
 
 	/**
 	 * Theme Constructor
@@ -49,7 +49,7 @@ class PE_Twenty_Seventeen {
 	 * Add some css to the head
 	 */
 	public function head_inline_style() {
-		if ( is_event() ) {
+		if ( is_bm_pe_event() ) {
 			$css = "body.press-events .single-featured-image-header {
 			    display: none;
 			}";
@@ -61,4 +61,4 @@ class PE_Twenty_Seventeen {
 	}
 
 }
-new PE_Twenty_Seventeen();
+new BM_PE_Twenty_Seventeen();

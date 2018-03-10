@@ -147,7 +147,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 
 		<div class="input-wrapper">
-			<?php if ( pe_get_option( 'api-key', 'pe-integrations-google-maps' ) == '' ) : ?>
+			<?php if ( bm_pe_get_option( 'api-key', 'pe-integrations-google-maps' ) == '' ) : ?>
 				<div class="small-error">
 					<p><?php echo sprintf( __( 'To activate Google maps you need to enter a Google Maps API in the <a href="%s">Press Events settings</a>.', 'press-events' ),
 						admin_url( 'edit.php?post_type=pe_event&page=pe-settings&tab=pe-integrations' )
