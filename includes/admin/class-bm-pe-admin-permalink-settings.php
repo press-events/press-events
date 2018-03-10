@@ -69,7 +69,7 @@ class BM_PE_Admin_Permalink_Settings {
 			'press-events-permalink' // settings section
 		);
 
-		$this->permalinks = ();
+		$this->permalinks = bm_pe_get_permalink_structure();
 	}
 
 	/**
@@ -120,10 +120,10 @@ class BM_PE_Admin_Permalink_Settings {
  		if ( isset( $_POST['permalink_structure'] ) ) {
  			$permalinks = (array) get_option( 'press_events_permalinks', array() );
 
-			$permalinks['event_archive']  = sanitize_title( trim( $_POST['press_events_event_archive_slug'] ) );
- 			$permalinks['event_base']  = sanitize_title( trim( $_POST['press_events_event_slug'] ) );
- 			$permalinks['category_base']  = sanitize_title( trim( $_POST['press_events_event_category_slug'] ) );
- 			$permalinks['tag_base'] = sanitize_title( trim( $_POST['press_events_event_tag_slug'] ) );
+			$permalinks['event_archive'] = bm_pe_sanitize_permalink( trim( $_POST['press_events_event_archive_slug'] ) );
+ 			$permalinks['event_base'] = bm_pe_sanitize_permalink( trim( $_POST['press_events_event_slug'] ) );
+ 			$permalinks['category_base'] = bm_pe_sanitize_permalink( trim( $_POST['press_events_event_category_slug'] ) );
+ 			$permalinks['tag_base'] = bm_pe_sanitize_permalink( trim( $_POST['press_events_event_tag_slug'] ) );
 
  			update_option( 'press_events_permalinks', $permalinks );
  		}
