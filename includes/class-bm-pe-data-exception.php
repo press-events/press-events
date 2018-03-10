@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Data_Exception class.
+ * BM_PE_Data_Exception class.
  */
-class PE_Data_Exception extends Exception {
+class BM_PE_Data_Exception extends Exception {
 
 	/**
 	 * Sanitized error code.

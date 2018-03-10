@@ -728,7 +728,7 @@ abstract class BM_PE_Data {
 	/**
 	 * When invalid data is found, throw an exception unless reading from the DB.
 	 *
-	 * @throws PE_Data_Exception
+	 * @throws BM_PE_Data_Exception
 	 * @since 1.0.0
 	 * @param string $code             Error code.
 	 * @param string $message          Error message.
@@ -736,7 +736,7 @@ abstract class BM_PE_Data {
 	 * @param array  $data             Extra error data.
 	 */
 	protected function error( $code, $message, $http_status_code = 400, $data = array() ) {
-		throw new PE_Data_Exception( $code, $message, $http_status_code, $data );
+		throw new BM_PE_Data_Exception( $code, $message, $http_status_code, $data );
 	}
 
 }
