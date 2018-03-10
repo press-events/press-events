@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Press Events package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Press Events 1.0.1\n"
+"Project-Id-Version: Press Events 1.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/press-events\n"
-"POT-Creation-Date: 2018-03-09 21:07:52+00:00\n"
+"POT-Creation-Date: 2018-03-10 14:58:17+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1009,22 +1009,22 @@ msgstr ""
 msgid "Zimbabwe"
 msgstr ""
 
-#: includes/abstracts/abstract-pe-data.php:285
+#: includes/abstracts/abstract-bm-pe-data.php:285
 #. translators: %s: $key Key to check
 msgid ""
 "Generic add/update/get meta methods should not be used for internal meta "
 "data, including \"%s\". Use getters and setters."
 msgstr ""
 
-#: includes/abstracts/abstract-pe-event-location.php:89
+#: includes/abstracts/abstract-bm-pe-event-location.php:89
 msgid "Invalid event location."
 msgstr ""
 
-#: includes/abstracts/abstract-pe-event-organiser.php:86
+#: includes/abstracts/abstract-bm-pe-event-organiser.php:86
 msgid "Invalid event organiser."
 msgstr ""
 
-#: includes/abstracts/abstract-pe-event.php:96
+#: includes/abstracts/abstract-bm-pe-event.php:96
 msgid "Invalid event."
 msgstr ""
 
@@ -1032,103 +1032,104 @@ msgstr ""
 msgid "Press Events"
 msgstr ""
 
-#: includes/admin/class-pe-admin-assets.php:88
+#: includes/admin/class-bm-pe-admin-assets.php:88
 msgid "Clear"
 msgstr ""
 
-#: includes/admin/class-pe-admin-assets.php:89
+#: includes/admin/class-bm-pe-admin-assets.php:89
 msgid "Today"
 msgstr ""
 
-#: includes/admin/class-pe-admin-meta-boxes.php:44
+#: includes/admin/class-bm-pe-admin-meta-boxes.php:44
 msgid "Event Details"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:40
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:40
 msgid "Event permalinks"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:45
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:45
 msgid "Event archive"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:52
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:52
 msgid "Event base"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:59
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:59
 msgid "Event category base"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:66
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:66
 msgid "Event tag base"
 msgstr ""
 
-#: includes/admin/class-pe-admin-settings.php:57
-#: includes/admin/class-pe-admin-settings.php:58
-#: includes/admin/class-pe-admin.php:94 includes/class-pe-admin-bar.php:68
+#: includes/admin/class-bm-pe-admin-settings.php:57
+#: includes/admin/class-bm-pe-admin-settings.php:58
+#: includes/admin/class-bm-pe-admin.php:93
+#: includes/class-bm-pe-admin-bar.php:68
 msgid "Settings"
 msgstr ""
 
-#: includes/admin/class-pe-admin-user-contacts.php:32
+#: includes/admin/class-bm-pe-admin-user-contacts.php:32
 #: templates/single-event/organisers.php:49
 msgid "Phone"
 msgstr ""
 
-#: includes/admin/class-pe-admin.php:79
+#: includes/admin/class-bm-pe-admin.php:78
 msgid "Thank you for using Press Events."
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:58
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:58
 msgid "Ready to create your first event?"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:59
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:59
 msgid "Create your first event"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:90
-#: includes/admin/meta-boxes/class-pe-meta-box-event-details.php:35
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:90
+#: includes/admin/meta-boxes/class-bm-pe-meta-box-event-details.php:35
 #: templates/single-event/date-time.php:21
 msgid "Date & Time"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:91
-#: includes/class-pe-admin-bar.php:47 includes/class-pe-post-types.php:56
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:91
+#: includes/class-bm-pe-admin-bar.php:47 includes/class-bm-pe-post-types.php:56
 msgid "Categories"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:92
-#: includes/class-pe-admin-bar.php:54 templates/single-event/tags.php:24
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:92
+#: includes/class-bm-pe-admin-bar.php:54 templates/single-event/tags.php:24
 msgid "Tags"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:93
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:93
 msgid "Featured"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:94
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:94
 msgid "Date"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:151
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:151
 msgid "Timezone"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:193
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:193
 msgid "Yes"
 msgstr ""
 
-#: includes/admin/list-tables/class-pe-admin-list-table-events.php:195
+#: includes/admin/list-tables/class-bm-pe-admin-list-table-events.php:195
 msgid "No"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-pe-meta-box-event-details.php:42
+#: includes/admin/meta-boxes/class-bm-pe-meta-box-event-details.php:42
 #: templates/single-event/location.php:25
 msgid "Location"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-pe-meta-box-event-details.php:49
+#: includes/admin/meta-boxes/class-bm-pe-meta-box-event-details.php:49
 #: templates/single-event/organisers.php:27
 msgid "Organisers"
 msgstr ""
@@ -1164,17 +1165,17 @@ msgid "End date"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:11
-#: includes/class-pe-ajax.php:187
+#: includes/class-bm-pe-ajax.php:186
 msgid "Select location"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:12
-#: includes/class-pe-ajax.php:188 includes/class-pe-post-types.php:176
+#: includes/class-bm-pe-ajax.php:187 includes/class-bm-pe-post-types.php:176
 msgid "Add new location"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-location.php:30
-#: includes/class-pe-ajax.php:206
+#: includes/class-bm-pe-ajax.php:205
 msgid "Add a location"
 msgstr ""
 
@@ -1217,17 +1218,17 @@ msgid "Show Google Map"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:11
-#: includes/class-pe-ajax.php:330
+#: includes/class-bm-pe-ajax.php:329
 msgid "Select organisers"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:13
-#: includes/class-pe-ajax.php:332
+#: includes/class-bm-pe-ajax.php:331
 msgid "Add new organiser"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-event-details-organisers.php:33
-#: includes/class-pe-ajax.php:352
+#: includes/class-bm-pe-ajax.php:351
 msgid "Add an organiser"
 msgstr ""
 
@@ -1255,1110 +1256,1117 @@ msgstr ""
 msgid "Phone number"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:41
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:41
 msgid "General"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:55
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:55
 msgid "General options"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:62
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:62
 msgid "Event options"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:87
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:87
 msgid "Base country"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:88
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:88
 msgid ""
 "The default country for your event locations. This is overridden in each "
 "event."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:95
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:95
 msgid "Default Template"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:100
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:100
 msgid "Event page template"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:101
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:101
 msgid ""
 "Select the default page template for the event pages. These are based on "
 "the current themes available templates."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:110
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:110
 msgid "Archive views"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:111
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:111
 msgid "Available archive views."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:124
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:124
 msgid "Default archive view"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:125
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:125
 msgid "Choose the default event archive view."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:135
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:135
 msgid "Enable AJAX archives"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:142
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:142
 msgid "Enable comments"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:157
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:157
 msgid "Currency"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:158
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:158
 msgid "Select the default currency for the events."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:165
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:165
 msgid "Currency position"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:166
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:166
 msgid "This controls the position of the currency symbol."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:170
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:170
 msgid "Left"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:171
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:171
 msgid "Right"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:172
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:172
 msgid "Left with space"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:173
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:173
 msgid "Right with space"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:178
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:178
 msgid "Thousand separator"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:179
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:179
 msgid "This sets the thousand separator to display on prices."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:186
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:186
 msgid "Decimal separator"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:187
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:187
 msgid "This sets the decimal separator to display on prices."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:194
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:194
 msgid "Number of decimals"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-general.php:195
+#: includes/admin/settings/class-bm-pe-settings-page-general.php:195
 msgid "This sets the number of decimals to display on prices."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-integrations.php:41
+#: includes/admin/settings/class-bm-pe-settings-page-integrations.php:41
 msgid "Integrations"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-integrations.php:55
+#: includes/admin/settings/class-bm-pe-settings-page-integrations.php:55
 msgid "Google maps API"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-integrations.php:56
+#: includes/admin/settings/class-bm-pe-settings-page-integrations.php:56
 msgid ""
 "If you want to show Google maps on event and location pages you need to "
 "enter your Google Maps API key below."
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-integrations.php:70
+#: includes/admin/settings/class-bm-pe-settings-page-integrations.php:70
 msgid "API Key"
 msgstr ""
 
-#: includes/admin/settings/class-pe-settings-page-integrations.php:71
+#: includes/admin/settings/class-bm-pe-settings-page-integrations.php:71
 msgid "Enter your unique Google Maps API key"
 msgstr ""
 
-#: includes/class-pe-admin-bar.php:26 includes/class-pe-post-types.php:122
-msgid "Events"
-msgstr ""
-
-#: includes/class-pe-admin-bar.php:33
-msgid "Edit events"
-msgstr ""
-
-#: includes/class-pe-admin-bar.php:40
-msgid "Add new"
-msgstr ""
-
-#: includes/class-pe-admin-bar.php:61 includes/class-pe-post-types.php:173
-msgid "Locations"
-msgstr ""
-
-#: includes/class-pe-ajax.php:153
-msgid "You don't have permision to add or edit locations."
-msgstr ""
-
-#: includes/class-pe-ajax.php:168
-msgid "You need to add a title."
-msgstr ""
-
-#: includes/class-pe-ajax.php:230
-msgid "You don't have permision to delete locations."
-msgstr ""
-
-#: includes/class-pe-ajax.php:236
-msgid "No id set"
-msgstr ""
-
-#: includes/class-pe-ajax.php:261
-msgid "No ids set"
-msgstr ""
-
-#: includes/class-pe-ajax.php:297
-msgid "You don't have permision to edit users."
-msgstr ""
-
-#: includes/class-pe-ajax.php:313
-msgid "You need to enter a display name."
-msgstr ""
-
-#: includes/class-pe-ajax.php:317
-msgid "You need to enter a valid email."
-msgstr ""
-
-#: includes/class-pe-install.php:60
-msgid "Event organiser"
-msgstr ""
-
-#: includes/class-pe-post-types.php:58
-msgid "Event categories"
-msgstr ""
-
-#: includes/class-pe-post-types.php:59
-msgid "Category"
-msgstr ""
-
-#: includes/class-pe-post-types.php:61
-msgid "Search categories"
-msgstr ""
-
-#: includes/class-pe-post-types.php:62
-msgid "All categories"
-msgstr ""
-
-#: includes/class-pe-post-types.php:63
-msgid "Parent category"
-msgstr ""
-
-#: includes/class-pe-post-types.php:64
-msgid "Parent category:"
-msgstr ""
-
-#: includes/class-pe-post-types.php:65
-msgid "Edit category"
-msgstr ""
-
-#: includes/class-pe-post-types.php:66
-msgid "Update category"
-msgstr ""
-
-#: includes/class-pe-post-types.php:67
-msgid "Add new category"
-msgstr ""
-
-#: includes/class-pe-post-types.php:68
-msgid "New category name"
-msgstr ""
-
-#: includes/class-pe-post-types.php:69
-msgid "No categories found"
-msgstr ""
-
-#: includes/class-pe-post-types.php:84 includes/class-pe-post-types.php:86
-msgid "Event tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:87
-msgid "Tag"
-msgstr ""
-
-#: includes/class-pe-post-types.php:89
-msgid "Search tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:90
-msgid "All tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:91
-msgid "Edit tag"
-msgstr ""
-
-#: includes/class-pe-post-types.php:92
-msgid "Update tag"
-msgstr ""
-
-#: includes/class-pe-post-types.php:93
-msgid "Add new tag"
-msgstr ""
-
-#: includes/class-pe-post-types.php:94
-msgid "New tag name"
-msgstr ""
-
-#: includes/class-pe-post-types.php:95
-msgid "Popular tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:96
-msgid "Separate tags with commas"
-msgstr ""
-
-#: includes/class-pe-post-types.php:97
-msgid "Add or remove tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:98
-msgid "Choose from the most used tags"
-msgstr ""
-
-#: includes/class-pe-post-types.php:99
-msgid "No tags found"
-msgstr ""
-
-#: includes/class-pe-post-types.php:123
-msgid "Event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:124
-msgid "All Events"
-msgstr ""
-
-#: includes/class-pe-post-types.php:126 includes/class-pe-post-types.php:175
-msgid "Add New"
-msgstr ""
-
-#: includes/class-pe-post-types.php:127
-msgid "Add new event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:128 includes/class-pe-post-types.php:177
-msgid "Edit"
-msgstr ""
-
-#: includes/class-pe-post-types.php:129
-msgid "Edit event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:130
-msgid "New event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:131 includes/class-pe-post-types.php:132
-msgid "View event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:133
-msgid "View events"
-msgstr ""
-
-#: includes/class-pe-post-types.php:134
-msgid "Search events"
-msgstr ""
-
-#: includes/class-pe-post-types.php:135
-msgid "No events found"
-msgstr ""
-
-#: includes/class-pe-post-types.php:136
-msgid "No events found in trash"
-msgstr ""
-
-#: includes/class-pe-post-types.php:137
-msgid "Parent event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:138
-msgid "Event image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:139
-msgid "Set event image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:140
-msgid "Remove event image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:141
-msgid "Use as event image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:142
-msgid "Insert into event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:143
-msgid "Uploaded to this event"
-msgstr ""
-
-#: includes/class-pe-post-types.php:144
-msgid "Filter events"
-msgstr ""
-
-#: includes/class-pe-post-types.php:145
-msgid "Events navigation"
-msgstr ""
-
-#: includes/class-pe-post-types.php:146
-msgid "Events list"
-msgstr ""
-
-#: includes/class-pe-post-types.php:148
-msgid "This is where you can add new events."
-msgstr ""
-
-#: includes/class-pe-post-types.php:171
-msgid "Event Locations"
-msgstr ""
-
-#: includes/class-pe-post-types.php:172
-msgid "Event Location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:178
-msgid "Edit location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:179
-msgid "New location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:180 includes/class-pe-post-types.php:181
-msgid "View location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:182
-msgid "View locations"
-msgstr ""
-
-#: includes/class-pe-post-types.php:183
-msgid "Search locations"
-msgstr ""
-
-#: includes/class-pe-post-types.php:184
-msgid "No locations found"
-msgstr ""
-
-#: includes/class-pe-post-types.php:185
-msgid "No locations found in trash"
-msgstr ""
-
-#: includes/class-pe-post-types.php:186
-msgid "Parent location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:187
-msgid "Location image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:188
-msgid "Set location image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:189
-msgid "Remove location image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:190
-msgid "Use as location image"
-msgstr ""
-
-#: includes/class-pe-post-types.php:191
-msgid "Insert into location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:192
-msgid "Uploaded to this location"
-msgstr ""
-
-#: includes/class-pe-post-types.php:193
-msgid "Filter locations"
-msgstr ""
-
-#: includes/class-pe-post-types.php:194
-msgid "Locations navigation"
-msgstr ""
-
-#: includes/class-pe-post-types.php:195
-msgid "Locations list"
-msgstr ""
-
-#: includes/class-press-events.php:85 includes/class-press-events.php:96
-msgid "Cheatin&#8217; huh?"
-msgstr ""
-
-#: includes/pe-core-functions.php:187
+#: includes/bm-pe-core-functions.php:187
 msgid "United Arab Emirates dirham"
 msgstr ""
 
-#: includes/pe-core-functions.php:188
+#: includes/bm-pe-core-functions.php:188
 msgid "Afghan afghani"
 msgstr ""
 
-#: includes/pe-core-functions.php:189
+#: includes/bm-pe-core-functions.php:189
 msgid "Albanian lek"
 msgstr ""
 
-#: includes/pe-core-functions.php:190
+#: includes/bm-pe-core-functions.php:190
 msgid "Armenian dram"
 msgstr ""
 
-#: includes/pe-core-functions.php:191
+#: includes/bm-pe-core-functions.php:191
 msgid "Netherlands Antillean guilder"
 msgstr ""
 
-#: includes/pe-core-functions.php:192
+#: includes/bm-pe-core-functions.php:192
 msgid "Angolan kwanza"
 msgstr ""
 
-#: includes/pe-core-functions.php:193
+#: includes/bm-pe-core-functions.php:193
 msgid "Argentine peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:194
+#: includes/bm-pe-core-functions.php:194
 msgid "Australian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:195
+#: includes/bm-pe-core-functions.php:195
 msgid "Aruban florin"
 msgstr ""
 
-#: includes/pe-core-functions.php:196
+#: includes/bm-pe-core-functions.php:196
 msgid "Azerbaijani manat"
 msgstr ""
 
-#: includes/pe-core-functions.php:197
+#: includes/bm-pe-core-functions.php:197
 msgid "Bosnia and Herzegovina convertible mark"
 msgstr ""
 
-#: includes/pe-core-functions.php:198
+#: includes/bm-pe-core-functions.php:198
 msgid "Barbadian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:199
+#: includes/bm-pe-core-functions.php:199
 msgid "Bangladeshi taka"
 msgstr ""
 
-#: includes/pe-core-functions.php:200
+#: includes/bm-pe-core-functions.php:200
 msgid "Bulgarian lev"
 msgstr ""
 
-#: includes/pe-core-functions.php:201
+#: includes/bm-pe-core-functions.php:201
 msgid "Bahraini dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:202
+#: includes/bm-pe-core-functions.php:202
 msgid "Burundian franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:203
+#: includes/bm-pe-core-functions.php:203
 msgid "Bermudian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:204
+#: includes/bm-pe-core-functions.php:204
 msgid "Brunei dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:205
+#: includes/bm-pe-core-functions.php:205
 msgid "Bolivian boliviano"
 msgstr ""
 
-#: includes/pe-core-functions.php:206
+#: includes/bm-pe-core-functions.php:206
 msgid "Brazilian real"
 msgstr ""
 
-#: includes/pe-core-functions.php:207
+#: includes/bm-pe-core-functions.php:207
 msgid "Bahamian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:208
+#: includes/bm-pe-core-functions.php:208
 msgid "Bitcoin"
 msgstr ""
 
-#: includes/pe-core-functions.php:209
+#: includes/bm-pe-core-functions.php:209
 msgid "Bhutanese ngultrum"
 msgstr ""
 
-#: includes/pe-core-functions.php:210
+#: includes/bm-pe-core-functions.php:210
 msgid "Botswana pula"
 msgstr ""
 
-#: includes/pe-core-functions.php:211
+#: includes/bm-pe-core-functions.php:211
 msgid "Belarusian ruble (old)"
 msgstr ""
 
-#: includes/pe-core-functions.php:212
+#: includes/bm-pe-core-functions.php:212
 msgid "Belarusian ruble"
 msgstr ""
 
-#: includes/pe-core-functions.php:213
+#: includes/bm-pe-core-functions.php:213
 msgid "Belize dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:214
+#: includes/bm-pe-core-functions.php:214
 msgid "Canadian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:215
+#: includes/bm-pe-core-functions.php:215
 msgid "Congolese franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:216
+#: includes/bm-pe-core-functions.php:216
 msgid "Swiss franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:217
+#: includes/bm-pe-core-functions.php:217
 msgid "Chilean peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:218
+#: includes/bm-pe-core-functions.php:218
 msgid "Chinese yuan"
 msgstr ""
 
-#: includes/pe-core-functions.php:219
+#: includes/bm-pe-core-functions.php:219
 msgid "Colombian peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:220
+#: includes/bm-pe-core-functions.php:220
 msgid "Costa Rican col&oacute;n"
 msgstr ""
 
-#: includes/pe-core-functions.php:221
+#: includes/bm-pe-core-functions.php:221
 msgid "Cuban convertible peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:222
+#: includes/bm-pe-core-functions.php:222
 msgid "Cuban peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:223
+#: includes/bm-pe-core-functions.php:223
 msgid "Cape Verdean escudo"
 msgstr ""
 
-#: includes/pe-core-functions.php:224
+#: includes/bm-pe-core-functions.php:224
 msgid "Czech koruna"
 msgstr ""
 
-#: includes/pe-core-functions.php:225
+#: includes/bm-pe-core-functions.php:225
 msgid "Djiboutian franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:226
+#: includes/bm-pe-core-functions.php:226
 msgid "Danish krone"
 msgstr ""
 
-#: includes/pe-core-functions.php:227
+#: includes/bm-pe-core-functions.php:227
 msgid "Dominican peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:228
+#: includes/bm-pe-core-functions.php:228
 msgid "Algerian dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:229
+#: includes/bm-pe-core-functions.php:229
 msgid "Egyptian pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:230
+#: includes/bm-pe-core-functions.php:230
 msgid "Eritrean nakfa"
 msgstr ""
 
-#: includes/pe-core-functions.php:231
+#: includes/bm-pe-core-functions.php:231
 msgid "Ethiopian birr"
 msgstr ""
 
-#: includes/pe-core-functions.php:232
+#: includes/bm-pe-core-functions.php:232
 msgid "Euro"
 msgstr ""
 
-#: includes/pe-core-functions.php:233
+#: includes/bm-pe-core-functions.php:233
 msgid "Fijian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:234
+#: includes/bm-pe-core-functions.php:234
 msgid "Falkland Islands pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:235
+#: includes/bm-pe-core-functions.php:235
 msgid "Pound sterling"
 msgstr ""
 
-#: includes/pe-core-functions.php:236
+#: includes/bm-pe-core-functions.php:236
 msgid "Georgian lari"
 msgstr ""
 
-#: includes/pe-core-functions.php:237
+#: includes/bm-pe-core-functions.php:237
 msgid "Guernsey pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:238
+#: includes/bm-pe-core-functions.php:238
 msgid "Ghana cedi"
 msgstr ""
 
-#: includes/pe-core-functions.php:239
+#: includes/bm-pe-core-functions.php:239
 msgid "Gibraltar pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:240
+#: includes/bm-pe-core-functions.php:240
 msgid "Gambian dalasi"
 msgstr ""
 
-#: includes/pe-core-functions.php:241
+#: includes/bm-pe-core-functions.php:241
 msgid "Guinean franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:242
+#: includes/bm-pe-core-functions.php:242
 msgid "Guatemalan quetzal"
 msgstr ""
 
-#: includes/pe-core-functions.php:243
+#: includes/bm-pe-core-functions.php:243
 msgid "Guyanese dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:244
+#: includes/bm-pe-core-functions.php:244
 msgid "Hong Kong dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:245
+#: includes/bm-pe-core-functions.php:245
 msgid "Honduran lempira"
 msgstr ""
 
-#: includes/pe-core-functions.php:246
+#: includes/bm-pe-core-functions.php:246
 msgid "Croatian kuna"
 msgstr ""
 
-#: includes/pe-core-functions.php:247
+#: includes/bm-pe-core-functions.php:247
 msgid "Haitian gourde"
 msgstr ""
 
-#: includes/pe-core-functions.php:248
+#: includes/bm-pe-core-functions.php:248
 msgid "Hungarian forint"
 msgstr ""
 
-#: includes/pe-core-functions.php:249
+#: includes/bm-pe-core-functions.php:249
 msgid "Indonesian rupiah"
 msgstr ""
 
-#: includes/pe-core-functions.php:250
+#: includes/bm-pe-core-functions.php:250
 msgid "Israeli new shekel"
 msgstr ""
 
-#: includes/pe-core-functions.php:251
+#: includes/bm-pe-core-functions.php:251
 msgid "Manx pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:252
+#: includes/bm-pe-core-functions.php:252
 msgid "Indian rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:253
+#: includes/bm-pe-core-functions.php:253
 msgid "Iraqi dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:254
+#: includes/bm-pe-core-functions.php:254
 msgid "Iranian rial"
 msgstr ""
 
-#: includes/pe-core-functions.php:255
+#: includes/bm-pe-core-functions.php:255
 msgid "Iranian toman"
 msgstr ""
 
-#: includes/pe-core-functions.php:256
+#: includes/bm-pe-core-functions.php:256
 msgid "Icelandic kr&oacute;na"
 msgstr ""
 
-#: includes/pe-core-functions.php:257
+#: includes/bm-pe-core-functions.php:257
 msgid "Jersey pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:258
+#: includes/bm-pe-core-functions.php:258
 msgid "Jamaican dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:259
+#: includes/bm-pe-core-functions.php:259
 msgid "Jordanian dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:260
+#: includes/bm-pe-core-functions.php:260
 msgid "Japanese yen"
 msgstr ""
 
-#: includes/pe-core-functions.php:261
+#: includes/bm-pe-core-functions.php:261
 msgid "Kenyan shilling"
 msgstr ""
 
-#: includes/pe-core-functions.php:262
+#: includes/bm-pe-core-functions.php:262
 msgid "Kyrgyzstani som"
 msgstr ""
 
-#: includes/pe-core-functions.php:263
+#: includes/bm-pe-core-functions.php:263
 msgid "Cambodian riel"
 msgstr ""
 
-#: includes/pe-core-functions.php:264
+#: includes/bm-pe-core-functions.php:264
 msgid "Comorian franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:265
+#: includes/bm-pe-core-functions.php:265
 msgid "North Korean won"
 msgstr ""
 
-#: includes/pe-core-functions.php:266
+#: includes/bm-pe-core-functions.php:266
 msgid "South Korean won"
 msgstr ""
 
-#: includes/pe-core-functions.php:267
+#: includes/bm-pe-core-functions.php:267
 msgid "Kuwaiti dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:268
+#: includes/bm-pe-core-functions.php:268
 msgid "Cayman Islands dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:269
+#: includes/bm-pe-core-functions.php:269
 msgid "Kazakhstani tenge"
 msgstr ""
 
-#: includes/pe-core-functions.php:270
+#: includes/bm-pe-core-functions.php:270
 msgid "Lao kip"
 msgstr ""
 
-#: includes/pe-core-functions.php:271
+#: includes/bm-pe-core-functions.php:271
 msgid "Lebanese pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:272
+#: includes/bm-pe-core-functions.php:272
 msgid "Sri Lankan rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:273
+#: includes/bm-pe-core-functions.php:273
 msgid "Liberian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:274
+#: includes/bm-pe-core-functions.php:274
 msgid "Lesotho loti"
 msgstr ""
 
-#: includes/pe-core-functions.php:275
+#: includes/bm-pe-core-functions.php:275
 msgid "Libyan dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:276
+#: includes/bm-pe-core-functions.php:276
 msgid "Moroccan dirham"
 msgstr ""
 
-#: includes/pe-core-functions.php:277
+#: includes/bm-pe-core-functions.php:277
 msgid "Moldovan leu"
 msgstr ""
 
-#: includes/pe-core-functions.php:278
+#: includes/bm-pe-core-functions.php:278
 msgid "Malagasy ariary"
 msgstr ""
 
-#: includes/pe-core-functions.php:279
+#: includes/bm-pe-core-functions.php:279
 msgid "Macedonian denar"
 msgstr ""
 
-#: includes/pe-core-functions.php:280
+#: includes/bm-pe-core-functions.php:280
 msgid "Burmese kyat"
 msgstr ""
 
-#: includes/pe-core-functions.php:281
+#: includes/bm-pe-core-functions.php:281
 msgid "Mongolian t&ouml;gr&ouml;g"
 msgstr ""
 
-#: includes/pe-core-functions.php:282
+#: includes/bm-pe-core-functions.php:282
 msgid "Macanese pataca"
 msgstr ""
 
-#: includes/pe-core-functions.php:283
+#: includes/bm-pe-core-functions.php:283
 msgid "Mauritanian ouguiya"
 msgstr ""
 
-#: includes/pe-core-functions.php:284
+#: includes/bm-pe-core-functions.php:284
 msgid "Mauritian rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:285
+#: includes/bm-pe-core-functions.php:285
 msgid "Maldivian rufiyaa"
 msgstr ""
 
-#: includes/pe-core-functions.php:286
+#: includes/bm-pe-core-functions.php:286
 msgid "Malawian kwacha"
 msgstr ""
 
-#: includes/pe-core-functions.php:287
+#: includes/bm-pe-core-functions.php:287
 msgid "Mexican peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:288
+#: includes/bm-pe-core-functions.php:288
 msgid "Malaysian ringgit"
 msgstr ""
 
-#: includes/pe-core-functions.php:289
+#: includes/bm-pe-core-functions.php:289
 msgid "Mozambican metical"
 msgstr ""
 
-#: includes/pe-core-functions.php:290
+#: includes/bm-pe-core-functions.php:290
 msgid "Namibian dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:291
+#: includes/bm-pe-core-functions.php:291
 msgid "Nigerian naira"
 msgstr ""
 
-#: includes/pe-core-functions.php:292
+#: includes/bm-pe-core-functions.php:292
 msgid "Nicaraguan c&oacute;rdoba"
 msgstr ""
 
-#: includes/pe-core-functions.php:293
+#: includes/bm-pe-core-functions.php:293
 msgid "Norwegian krone"
 msgstr ""
 
-#: includes/pe-core-functions.php:294
+#: includes/bm-pe-core-functions.php:294
 msgid "Nepalese rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:295
+#: includes/bm-pe-core-functions.php:295
 msgid "New Zealand dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:296
+#: includes/bm-pe-core-functions.php:296
 msgid "Omani rial"
 msgstr ""
 
-#: includes/pe-core-functions.php:297
+#: includes/bm-pe-core-functions.php:297
 msgid "Panamanian balboa"
 msgstr ""
 
-#: includes/pe-core-functions.php:298
+#: includes/bm-pe-core-functions.php:298
 msgid "Peruvian nuevo sol"
 msgstr ""
 
-#: includes/pe-core-functions.php:299
+#: includes/bm-pe-core-functions.php:299
 msgid "Papua New Guinean kina"
 msgstr ""
 
-#: includes/pe-core-functions.php:300
+#: includes/bm-pe-core-functions.php:300
 msgid "Philippine peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:301
+#: includes/bm-pe-core-functions.php:301
 msgid "Pakistani rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:302
+#: includes/bm-pe-core-functions.php:302
 msgid "Polish z&#x142;oty"
 msgstr ""
 
-#: includes/pe-core-functions.php:303
+#: includes/bm-pe-core-functions.php:303
 msgid "Transnistrian ruble"
 msgstr ""
 
-#: includes/pe-core-functions.php:304
+#: includes/bm-pe-core-functions.php:304
 msgid "Paraguayan guaran&iacute;"
 msgstr ""
 
-#: includes/pe-core-functions.php:305
+#: includes/bm-pe-core-functions.php:305
 msgid "Qatari riyal"
 msgstr ""
 
-#: includes/pe-core-functions.php:306
+#: includes/bm-pe-core-functions.php:306
 msgid "Romanian leu"
 msgstr ""
 
-#: includes/pe-core-functions.php:307
+#: includes/bm-pe-core-functions.php:307
 msgid "Serbian dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:308
+#: includes/bm-pe-core-functions.php:308
 msgid "Russian ruble"
 msgstr ""
 
-#: includes/pe-core-functions.php:309
+#: includes/bm-pe-core-functions.php:309
 msgid "Rwandan franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:310
+#: includes/bm-pe-core-functions.php:310
 msgid "Saudi riyal"
 msgstr ""
 
-#: includes/pe-core-functions.php:311
+#: includes/bm-pe-core-functions.php:311
 msgid "Solomon Islands dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:312
+#: includes/bm-pe-core-functions.php:312
 msgid "Seychellois rupee"
 msgstr ""
 
-#: includes/pe-core-functions.php:313
+#: includes/bm-pe-core-functions.php:313
 msgid "Sudanese pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:314
+#: includes/bm-pe-core-functions.php:314
 msgid "Swedish krona"
 msgstr ""
 
-#: includes/pe-core-functions.php:315
+#: includes/bm-pe-core-functions.php:315
 msgid "Singapore dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:316
+#: includes/bm-pe-core-functions.php:316
 msgid "Saint Helena pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:317
+#: includes/bm-pe-core-functions.php:317
 msgid "Sierra Leonean leone"
 msgstr ""
 
-#: includes/pe-core-functions.php:318
+#: includes/bm-pe-core-functions.php:318
 msgid "Somali shilling"
 msgstr ""
 
-#: includes/pe-core-functions.php:319
+#: includes/bm-pe-core-functions.php:319
 msgid "Surinamese dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:320
+#: includes/bm-pe-core-functions.php:320
 msgid "South Sudanese pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:321
+#: includes/bm-pe-core-functions.php:321
 msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"
 msgstr ""
 
-#: includes/pe-core-functions.php:322
+#: includes/bm-pe-core-functions.php:322
 msgid "Syrian pound"
 msgstr ""
 
-#: includes/pe-core-functions.php:323
+#: includes/bm-pe-core-functions.php:323
 msgid "Swazi lilangeni"
 msgstr ""
 
-#: includes/pe-core-functions.php:324
+#: includes/bm-pe-core-functions.php:324
 msgid "Thai baht"
 msgstr ""
 
-#: includes/pe-core-functions.php:325
+#: includes/bm-pe-core-functions.php:325
 msgid "Tajikistani somoni"
 msgstr ""
 
-#: includes/pe-core-functions.php:326
+#: includes/bm-pe-core-functions.php:326
 msgid "Turkmenistan manat"
 msgstr ""
 
-#: includes/pe-core-functions.php:327
+#: includes/bm-pe-core-functions.php:327
 msgid "Tunisian dinar"
 msgstr ""
 
-#: includes/pe-core-functions.php:328
+#: includes/bm-pe-core-functions.php:328
 msgid "Tongan pa&#x2bb;anga"
 msgstr ""
 
-#: includes/pe-core-functions.php:329
+#: includes/bm-pe-core-functions.php:329
 msgid "Turkish lira"
 msgstr ""
 
-#: includes/pe-core-functions.php:330
+#: includes/bm-pe-core-functions.php:330
 msgid "Trinidad and Tobago dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:331
+#: includes/bm-pe-core-functions.php:331
 msgid "New Taiwan dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:332
+#: includes/bm-pe-core-functions.php:332
 msgid "Tanzanian shilling"
 msgstr ""
 
-#: includes/pe-core-functions.php:333
+#: includes/bm-pe-core-functions.php:333
 msgid "Ukrainian hryvnia"
 msgstr ""
 
-#: includes/pe-core-functions.php:334
+#: includes/bm-pe-core-functions.php:334
 msgid "Ugandan shilling"
 msgstr ""
 
-#: includes/pe-core-functions.php:335
+#: includes/bm-pe-core-functions.php:335
 msgid "United States dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:336
+#: includes/bm-pe-core-functions.php:336
 msgid "Uruguayan peso"
 msgstr ""
 
-#: includes/pe-core-functions.php:337
+#: includes/bm-pe-core-functions.php:337
 msgid "Uzbekistani som"
 msgstr ""
 
-#: includes/pe-core-functions.php:338
+#: includes/bm-pe-core-functions.php:338
 msgid "Venezuelan bol&iacute;var"
 msgstr ""
 
-#: includes/pe-core-functions.php:339
+#: includes/bm-pe-core-functions.php:339
 msgid "Vietnamese &#x111;&#x1ed3;ng"
 msgstr ""
 
-#: includes/pe-core-functions.php:340
+#: includes/bm-pe-core-functions.php:340
 msgid "Vanuatu vatu"
 msgstr ""
 
-#: includes/pe-core-functions.php:341
+#: includes/bm-pe-core-functions.php:341
 msgid "Samoan t&#x101;l&#x101;"
 msgstr ""
 
-#: includes/pe-core-functions.php:342
+#: includes/bm-pe-core-functions.php:342
 msgid "Central African CFA franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:343
+#: includes/bm-pe-core-functions.php:343
 msgid "East Caribbean dollar"
 msgstr ""
 
-#: includes/pe-core-functions.php:344
+#: includes/bm-pe-core-functions.php:344
 msgid "West African CFA franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:345
+#: includes/bm-pe-core-functions.php:345
 msgid "CFP franc"
 msgstr ""
 
-#: includes/pe-core-functions.php:346
+#: includes/bm-pe-core-functions.php:346
 msgid "Yemeni rial"
 msgstr ""
 
-#: includes/pe-core-functions.php:347
+#: includes/bm-pe-core-functions.php:347
 msgid "South African rand"
 msgstr ""
 
-#: includes/pe-core-functions.php:348
+#: includes/bm-pe-core-functions.php:348
 msgid "Zambian kwacha"
+msgstr ""
+
+#: includes/class-bm-pe-admin-bar.php:26
+#: includes/class-bm-pe-post-types.php:122
+msgid "Events"
+msgstr ""
+
+#: includes/class-bm-pe-admin-bar.php:33
+msgid "Edit events"
+msgstr ""
+
+#: includes/class-bm-pe-admin-bar.php:40
+msgid "Add new"
+msgstr ""
+
+#: includes/class-bm-pe-admin-bar.php:61
+#: includes/class-bm-pe-post-types.php:173
+msgid "Locations"
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:152
+msgid "You don't have permision to add or edit locations."
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:167
+msgid "You need to add a title."
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:229
+msgid "You don't have permision to delete locations."
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:235
+msgid "No id set"
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:260
+msgid "No ids set"
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:296
+msgid "You don't have permision to edit users."
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:312
+msgid "You need to enter a display name."
+msgstr ""
+
+#: includes/class-bm-pe-ajax.php:316
+msgid "You need to enter a valid email."
+msgstr ""
+
+#: includes/class-bm-pe-install.php:60
+msgid "Event organiser"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:58
+msgid "Event categories"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:59
+msgid "Category"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:61
+msgid "Search categories"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:62
+msgid "All categories"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:63
+msgid "Parent category"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:64
+msgid "Parent category:"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:65
+msgid "Edit category"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:66
+msgid "Update category"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:67
+msgid "Add new category"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:68
+msgid "New category name"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:69
+msgid "No categories found"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:84
+#: includes/class-bm-pe-post-types.php:86
+msgid "Event tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:87
+msgid "Tag"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:89
+msgid "Search tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:90
+msgid "All tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:91
+msgid "Edit tag"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:92
+msgid "Update tag"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:93
+msgid "Add new tag"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:94
+msgid "New tag name"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:95
+msgid "Popular tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:96
+msgid "Separate tags with commas"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:97
+msgid "Add or remove tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:98
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:99
+msgid "No tags found"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:123
+msgid "Event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:124
+msgid "All Events"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:126
+#: includes/class-bm-pe-post-types.php:175
+msgid "Add New"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:127
+msgid "Add new event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:128
+#: includes/class-bm-pe-post-types.php:177
+msgid "Edit"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:129
+msgid "Edit event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:130
+msgid "New event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:131
+#: includes/class-bm-pe-post-types.php:132
+msgid "View event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:133
+msgid "View events"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:134
+msgid "Search events"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:135
+msgid "No events found"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:136
+msgid "No events found in trash"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:137
+msgid "Parent event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:138
+msgid "Event image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:139
+msgid "Set event image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:140
+msgid "Remove event image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:141
+msgid "Use as event image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:142
+msgid "Insert into event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:143
+msgid "Uploaded to this event"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:144
+msgid "Filter events"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:145
+msgid "Events navigation"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:146
+msgid "Events list"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:148
+msgid "This is where you can add new events."
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:171
+msgid "Event Locations"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:172
+msgid "Event Location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:178
+msgid "Edit location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:179
+msgid "New location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:180
+#: includes/class-bm-pe-post-types.php:181
+msgid "View location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:182
+msgid "View locations"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:183
+msgid "Search locations"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:184
+msgid "No locations found"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:185
+msgid "No locations found in trash"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:186
+msgid "Parent location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:187
+msgid "Location image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:188
+msgid "Set location image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:189
+msgid "Remove location image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:190
+msgid "Use as location image"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:191
+msgid "Insert into location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:192
+msgid "Uploaded to this location"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:193
+msgid "Filter locations"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:194
+msgid "Locations navigation"
+msgstr ""
+
+#: includes/class-bm-pe-post-types.php:195
+msgid "Locations list"
+msgstr ""
+
+#: includes/class-bm-press-events.php:85 includes/class-bm-press-events.php:96
+msgid "Cheatin&#8217; huh?"
 msgstr ""
 
 #: templates/archive/filters.php:28 templates/archive/filters.php:47
@@ -2417,86 +2425,86 @@ msgstr ""
 msgid "http://burnmedia.co.uk/"
 msgstr ""
 
-#: includes/admin/class-pe-admin-assets.php:102
+#: includes/admin/class-bm-pe-admin-assets.php:102
 msgctxt "time-picker"
 msgid "mins"
 msgstr ""
 
-#: includes/admin/class-pe-admin-assets.php:103
+#: includes/admin/class-bm-pe-admin-assets.php:103
 msgctxt "time-picker"
 msgid "hr"
 msgstr ""
 
-#: includes/admin/class-pe-admin-assets.php:104
+#: includes/admin/class-bm-pe-admin-assets.php:104
 msgctxt "time-picker"
 msgid "hrs"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:80
-#: includes/pe-core-functions.php:49
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:80
+#: includes/bm-pe-core-functions.php:49
 msgctxt "slug"
 msgid "events"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:89
-#: includes/pe-core-functions.php:50
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:89
+#: includes/bm-pe-core-functions.php:50
 msgctxt "slug"
 msgid "event"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:98
-#: includes/pe-core-functions.php:51
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:98
+#: includes/bm-pe-core-functions.php:51
 msgctxt "slug"
 msgid "event-category"
 msgstr ""
 
-#: includes/admin/class-pe-admin-permalink-settings.php:107
-#: includes/pe-core-functions.php:52
+#: includes/admin/class-bm-pe-admin-permalink-settings.php:107
+#: includes/bm-pe-core-functions.php:52
 msgctxt "slug"
 msgid "event-tag"
 msgstr ""
 
-#: includes/class-pe-post-types.php:60
+#: includes/class-bm-pe-post-types.php:60
 msgctxt "Admin menu name"
 msgid "Categories"
 msgstr ""
 
-#: includes/class-pe-post-types.php:88
+#: includes/class-bm-pe-post-types.php:88
 msgctxt "Admin menu name"
 msgid "Tags"
 msgstr ""
 
-#: includes/class-pe-post-types.php:125
+#: includes/class-bm-pe-post-types.php:125
 msgctxt "Admin menu name"
 msgid "Events"
 msgstr ""
 
-#: includes/class-pe-post-types.php:174
+#: includes/class-bm-pe-post-types.php:174
 msgctxt "Admin menu name"
 msgid "Locations"
 msgstr ""
 
-#: includes/class-pe-query.php:49
+#: includes/class-bm-pe-query.php:49
 msgctxt "query_vars"
 msgid "archive-type"
 msgstr ""
 
-#: includes/class-pe-query.php:50
+#: includes/class-bm-pe-query.php:50
 msgctxt "query_vars"
 msgid "archive-query"
 msgstr ""
 
-#: includes/class-pe-query.php:51
+#: includes/class-bm-pe-query.php:51
 msgctxt "query_vars"
 msgid "archive-month"
 msgstr ""
 
-#: includes/class-pe-query.php:52
+#: includes/class-bm-pe-query.php:52
 msgctxt "query_vars"
 msgid "archive-category"
 msgstr ""
 
-#: includes/class-pe-query.php:53
+#: includes/class-bm-pe-query.php:53
 msgctxt "query_vars"
 msgid "archive-tag"
 msgstr ""
