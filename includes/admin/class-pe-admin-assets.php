@@ -38,8 +38,8 @@ class PE_Admin_Assets {
 		// Register admin styles
 		wp_register_style( 'jquery-timepicker', BM_Press_Events()->plugin_url() . '/assets/css/jquery-timepicker/jquery.timepicker.min.css', array(), '1.7.1' );
 		wp_register_style( 'bootstrap-datepicker', BM_Press_Events()->plugin_url() . '/assets/css/bootstrap-datepicker/bootstrap-datepicker.standalone.css', array(), '1.7.1' );
-		wp_register_style( 'press_events_admin_menu_styles', BM_Press_Events()->plugin_url() . '/assets/css/menu.css', array(), PE_VERSION );
-		wp_register_style( 'press_events_admin_styles', BM_Press_Events()->plugin_url() . '/assets/css/admin.css', array(), PE_VERSION );
+		wp_register_style( 'press_events_admin_menu_styles', BM_Press_Events()->plugin_url() . '/assets/css/menu.css', array(), BM_PE_VERSION );
+		wp_register_style( 'press_events_admin_styles', BM_Press_Events()->plugin_url() . '/assets/css/admin.css', array(), BM_PE_VERSION );
 
 		// Add RTL support for admin styles
 		wp_style_add_data( 'press_events_admin_menu_styles', 'rtl', 'replace' );
@@ -75,8 +75,8 @@ class PE_Admin_Assets {
 		wp_register_script( 'jquery-datepair-js', BM_Press_Events()->plugin_url() . '/assets/js/datepair-js/jquery.datepair'. $suffix .'.js', array( 'jquery', 'datepair-js' ), '0.4.15', true );
 		wp_register_script( 'jquery-tiptip', BM_Press_Events()->plugin_url() . '/assets/js/jquery-tiptip/jquery.tipTip'. $suffix .'.js', array( 'jquery' ), '1.3', true );
 		wp_register_script( 'php-date-formatter', BM_Press_Events()->plugin_url() . '/assets/js/php-date-formatter/php-date-formatter'. $suffix .'.js', array( 'jquery' ), '1.3.4', true );
-		wp_register_script( 'press-events-admin', BM_Press_Events()->plugin_url() . '/assets/js/admin/press-events-admin'. $suffix .'.js', array( 'jquery', 'jquery-tiptip', 'bootstrap-datepicker' ), PE_VERSION, true );
-		wp_register_script( 'pe-admin-meta-boxes', BM_Press_Events()->plugin_url() . '/assets/js/admin/meta-boxes'. $suffix .'.js', array( 'jquery', 'jquery-ui-sortable', 'bootstrap-datepicker', 'jquery-timepicker', 'jquery-datepair-js', 'jquery-tiptip', 'php-date-formatter' ), PE_VERSION, true );
+		wp_register_script( 'press-events-admin', BM_Press_Events()->plugin_url() . '/assets/js/admin/press-events-admin'. $suffix .'.js', array( 'jquery', 'jquery-tiptip', 'bootstrap-datepicker' ), BM_PE_VERSION, true );
+		wp_register_script( 'pe-admin-meta-boxes', BM_Press_Events()->plugin_url() . '/assets/js/admin/meta-boxes'. $suffix .'.js', array( 'jquery', 'jquery-ui-sortable', 'bootstrap-datepicker', 'jquery-timepicker', 'jquery-datepair-js', 'jquery-tiptip', 'php-date-formatter' ), BM_PE_VERSION, true );
 
 		$params = array(
 			'date_vars' => array(
@@ -116,7 +116,7 @@ class PE_Admin_Assets {
 
 		// Meta boxes
 		if ( in_array( $screen_id, array( 'pe_event', 'edit-pe_event' ) ) ) {
-			wp_register_script( 'pe-admin-event-meta-boxes', BM_Press_Events()->plugin_url() . '/assets/js/admin/meta-boxes-event'. $suffix .'.js', array( 'pe-admin-meta-boxes' ), PE_VERSION, true );
+			wp_register_script( 'pe-admin-event-meta-boxes', BM_Press_Events()->plugin_url() . '/assets/js/admin/meta-boxes-event'. $suffix .'.js', array( 'pe-admin-meta-boxes' ), BM_PE_VERSION, true );
 
 			wp_enqueue_script( 'pe-admin-event-meta-boxes' );
 

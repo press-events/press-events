@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class PE_Event_Location extends PE_Data {
+class BM_PE_Event_Location extends BM_PE_Data {
 
     /**
 	 * This is the name of this object type.
@@ -57,7 +57,7 @@ class PE_Event_Location extends PE_Data {
     /**
 	 * Get the event location if ID is passed, otherwise the event location is new and empty.
 	 *
-	 * @param int|PE_Event_Location|object $location event location to init.
+	 * @param int|BM_PE_Event_Location|object $location event location to init.
 	 */
 	public function __construct( $location = 0 ) {
 		parent::__construct( $location );

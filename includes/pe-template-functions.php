@@ -95,10 +95,10 @@ function pe_event_post_class( $classes, $class = '', $post_id = '' ) {
 function pe_generator_tag( $gen, $type ) {
     switch ( $type ) {
 		case 'html':
-            $gen .= "\n" . '<meta name="generator" content="Press Events ' . esc_attr( PE_VERSION ) . '">';
+            $gen .= "\n" . '<meta name="generator" content="Press Events ' . esc_attr( BM_PE_VERSION ) . '">';
             break;
         case 'xhtml':
-            $gen .= "\n" . '<meta name="generator" content="Press Events ' . esc_attr( PE_VERSION ) . '" />';
+            $gen .= "\n" . '<meta name="generator" content="Press Events ' . esc_attr( BM_PE_VERSION ) . '" />';
             break;
     }
 

@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class PE_Autoloader {
+class BM_PE_Autoloader {
 
 	/**
 	 * Path to the includes directory.
@@ -83,4 +83,4 @@ class PE_Autoloader {
 	}
 
 }
-new PE_Autoloader();
+new BM_PE_Autoloader();

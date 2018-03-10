@@ -29,7 +29,7 @@ function pe_get_location( $location = null ) {
 		$location = get_the_ID();
 	}
 
-	return apply_filters( 'press_events_get_location', new PE_Event_Location( $location ) );
+	return apply_filters( 'press_events_get_location', new BM_PE_Event_Location( $location ) );
 }
 
 /**

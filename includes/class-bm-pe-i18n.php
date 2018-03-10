@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Press_Events_i18n Class.
+ * BM_PE_i18n Class.
  */
-class Press_Events_i18n {
+class BM_PE_i18n {
 
 	/**
 	 * The domain specified for this plugin.

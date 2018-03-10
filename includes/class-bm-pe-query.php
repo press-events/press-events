@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Query Class.
+ * BM_PE_Query Class.
  */
-class PE_Query {
+class BM_PE_Query {
 
 	/**
 	 * Query vars to add to wp.

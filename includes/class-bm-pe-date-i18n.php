@@ -10,11 +10,14 @@
  * @author Burn Media Ltd
  */
 
- if ( ! defined( 'ABSPATH' ) ) {
- 	exit; // Exit if accessed directly
- }
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
-class PE_Date_i18n {
+/**
+ * class BM_PE_Date_i18n
+ */
+class BM_PE_Date_i18n {
 
     /**
      * Weekdays

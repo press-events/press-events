@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-class PE_Countries {
+class BM_PE_Countries {
 
     /**
      * Countries

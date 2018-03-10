@@ -34,28 +34,28 @@ final class BM_Press_Events {
     /**
 	 * Countries instance.
 	 *
-	 * @var PE_Countries
+	 * @var BM_PE_Countries
 	 */
 	public $countries = null;
 
     /**
 	 * Date i18n instance.
 	 *
-	 * @var PE_Date_i18n
+	 * @var BM_PE_Date_i18n
 	 */
 	public $date_i18n = null;
 
     /**
 	 * Query instance.
 	 *
-	 * @var PE_Query
+	 * @var BM_PE_Query
 	 */
 	public $query = null;
 
 	/**
 	 * The single instance of the class.
 	 *
-	 * @var Press_Events
+	 * @var BM_Press_Events
 	 * @since 1.0.0
 	 */
 	protected static $_instance = null;
@@ -64,7 +64,7 @@ final class BM_Press_Events {
 	 * Main Press Events Instance.
 	 *
 	 * @since 1.0.0
-	 * @return Press_Events - Main instance.
+	 * @return BM_Press_Events - Main instance.
 	 */
     public static function instance() {
 		if ( is_null( self::$_instance ) ) {
@@ -113,7 +113,7 @@ final class BM_Press_Events {
 	 * @since 1.0.0
 	 */
 	private function init_hooks() {
-        register_activation_hook( BM_PE_PLUGIN_FILE, array( 'PE_Install', 'init' ) );
+        register_activation_hook( BM_PE_PLUGIN_FILE, array( 'BM_PE_Install', 'init' ) );
 		add_action( 'after_setup_theme', array( $this, 'setup_environment' ) );
         add_action( 'after_setup_theme', array( $this, 'include_template_functions' ), 11 );
 		add_action( 'init', array( $this, 'init' ), 0 );
@@ -123,10 +123,10 @@ final class BM_Press_Events {
      * Define PE Constants.
      */
     private function define_constants() {
-        $this->define( 'PE_ABSPATH', dirname( BM_PE_PLUGIN_FILE ) . '/' );
-        $this->define( 'PE_PLUGIN_BASENAME', plugin_basename( BM_PE_PLUGIN_FILE ) );
-        $this->define( 'PE_VERSION', $this->version );
-		$this->define( 'PE_TEMPLATE_DEBUG_MODE', false );
+        $this->define( 'BM_PE_ABSPATH', dirname( BM_PE_PLUGIN_FILE ) . '/' );
+        $this->define( 'BM_PE_PLUGIN_BASENAME', plugin_basename( BM_PE_PLUGIN_FILE ) );
+        $this->define( 'BM_PE_VERSION', $this->version );
+		$this->define( 'BM_PE_TEMPLATE_DEBUG_MODE', false );
     }
 
     /**
@@ -152,9 +152,9 @@ final class BM_Press_Events {
 			case 'admin':
 				return is_admin();
 			case 'ajax':
-				return defined( 'DOING_AJAX' );
+				return defined( 'BM_PE_DOING_AJAX' );
 			case 'frontend':
-				return ( ! is_admin() || defined( 'DOING_AJAX' ) );
+				return ( ! is_admin() || defined( 'BM_PE_DOING_AJAX' ) );
 		}
 	}
 
@@ -165,41 +165,41 @@ final class BM_Press_Events {
         /**
 		 * Class autoloader.
 		 */
-        include_once( PE_ABSPATH . 'includes/class-pe-autoloader.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-autoloader.php' );
 
         /**
 		 * Abstract classes.
 		 */
-        include_once( PE_ABSPATH . 'includes/abstracts/abstract-pe-data.php' );
-        include_once( PE_ABSPATH . 'includes/abstracts/abstract-pe-object-query.php' );
-		include_once( PE_ABSPATH . 'includes/abstracts/abstract-pe-event.php' ); // Events
-		include_once( PE_ABSPATH . 'includes/abstracts/abstract-pe-event-location.php' ); // Event Locations
-		include_once( PE_ABSPATH . 'includes/abstracts/abstract-pe-event-organiser.php' ); // Event Organisers
+        include_once( BM_PE_ABSPATH . 'includes/abstracts/abstract-bm-pe-data.php' );
+		include_once( BM_PE_ABSPATH . 'includes/abstracts/abstract-bm-pe-event-location.php' ); // Event Locations
+		include_once( BM_PE_ABSPATH . 'includes/abstracts/abstract-bm-pe-event-organiser.php' ); // Event Organisers
+		include_once( BM_PE_ABSPATH . 'includes/abstracts/abstract-bm-pe-event.php' ); // Events
+        include_once( BM_PE_ABSPATH . 'includes/abstracts/abstract-bm-pe-object-query.php' );
 
         /**
 		 * Core classes.
 		 */
-        include_once( PE_ABSPATH . 'includes/class-pe-install.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-i18n.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-datetime.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-post-types.php' ); // Registers post types.
-        include_once( PE_ABSPATH . 'includes/pe-core-functions.php' );
-		include_once( PE_ABSPATH . 'includes/class-pe-admin-bar.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-countries.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-query.php' );
-        include_once( PE_ABSPATH . 'includes/class-pe-event-query.php' ); // Event query.
-        include_once( PE_ABSPATH . 'includes/class-pe-date-i18n.php' );
-		include_once( PE_ABSPATH . 'includes/class-pe-calendar.php' );
-		include_once( PE_ABSPATH . 'includes/class-pe-ajax.php' );
-        include_once( PE_ABSPATH . 'includes/pe-template-hooks.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-install.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-i18n.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-pe-datetime.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-post-types.php' ); // Registers post types.
+        include_once( BM_PE_ABSPATH . 'includes/pe-core-functions.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-pe-admin-bar.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-countries.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-query.php' );
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-event-query.php' ); // Event query.
+        include_once( BM_PE_ABSPATH . 'includes/class-bm-pe-date-i18n.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-pe-calendar.php' );
+		include_once( BM_PE_ABSPATH . 'includes/class-pe-ajax.php' );
+        include_once( BM_PE_ABSPATH . 'includes/pe-template-hooks.php' );
 
 		if ( $this->is_request( 'admin' ) ) {
-			include_once( PE_ABSPATH . 'includes/admin/class-pe-admin.php' );
+			include_once( BM_PE_ABSPATH . 'includes/admin/class-pe-admin.php' );
 		}
 
 		if ( $this->is_request( 'frontend' ) ) {
-			include_once( PE_ABSPATH . 'includes/class-pe-template-loader.php' ); // Template Loader.
-            include_once( PE_ABSPATH . 'includes/class-pe-assets.php' ); // Frontend Scripts.
+			include_once( BM_PE_ABSPATH . 'includes/class-pe-template-loader.php' ); // Template Loader.
+            include_once( BM_PE_ABSPATH . 'includes/class-pe-assets.php' ); // Frontend Scripts.
 		}
 
         $this->theme_support_includes();
@@ -209,7 +209,7 @@ final class BM_Press_Events {
 	 * Function used to Init Template Functions - This makes them pluggable by plugins and themes.
 	 */
 	public function include_template_functions() {
-        include_once( PE_ABSPATH . 'includes/pe-template-functions.php' );
+        include_once( BM_PE_ABSPATH . 'includes/pe-template-functions.php' );
 	}
 
     /**
@@ -223,7 +223,7 @@ final class BM_Press_Events {
         if ( $this->is_active_theme( $theme_support ) ) {
 			switch ( get_template() ) {
 				case 'twentyseventeen':
-					include_once( PE_ABSPATH . 'includes/theme-support/class-pe-twenty-seventeen.php' );
+					include_once( BM_PE_ABSPATH . 'includes/theme-support/class-pe-twenty-seventeen.php' );
 					break;
 			}
 		}
@@ -267,9 +267,9 @@ final class BM_Press_Events {
 		// Set up localisation.
 		$this->load_plugin_textdomain();
 
-        $this->countries = new PE_Countries(); // Countries class.
-        $this->date_i18n = new PE_Date_i18n(); // Date i18n class.
-        $this->query = new PE_Query(); // PE_Query
+        $this->countries = new BM_PE_Countries(); // Countries class.
+        $this->date_i18n = new BM_PE_Date_i18n(); // Date i18n class.
+        $this->query = new BM_PE_Query(); // PE_Query
 
 		// Init action.
 		do_action( 'press_events_init' );
@@ -285,7 +285,7 @@ final class BM_Press_Events {
 	 * @access 		private
 	 */
 	private function load_plugin_textdomain() {
-		$plugin_i18n = new Press_Events_i18n();
+		$plugin_i18n = new BM_PE_i18n();
 		$plugin_i18n->set_domain('press-events');
 
         add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );

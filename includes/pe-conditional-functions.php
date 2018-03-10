@@ -81,6 +81,6 @@ if ( ! function_exists( 'is_ajax' ) ) {
 	 * @return bool
 	 */
 	function is_ajax() {
-		return defined( 'DOING_AJAX' );
+		return defined( 'BM_PE_DOING_AJAX' );
 	}
 }

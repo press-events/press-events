@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Event_Query Class.
+ * BM_PE_Event_Query Class.
  */
-class PE_Event_Query extends PE_Object_Query {
+class BM_PE_Event_Query extends BM_PE_Object_Query {
 
 	/**
 	 * Valid query vars for events.

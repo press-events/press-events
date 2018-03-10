@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Post_types Class.
+ * BM_PE_Post_types Class.
  */
-class PE_Post_types {
+class BM_PE_Post_types {
 
 	/**
 	 * Init Posts types and taxonomies.
@@ -207,4 +207,4 @@ class PE_Post_types {
 	}
 
 }
-PE_Post_types::init();
+BM_PE_Post_types::init();

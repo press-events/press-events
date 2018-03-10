@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Function for returning events
  */
 function pe_get_events( $args = array() ) {
-	$query = new PE_Event_Query( $args );
+	$query = new BM_PE_Event_Query( $args );
 	return $query->get_events();
 }
 
@@ -39,7 +39,7 @@ function pe_get_event( $event = null ) {
 		$event = get_the_ID();
 	}
 
-	return apply_filters( 'press_events_get_event', new PE_Event( $event ) );
+	return apply_filters( 'press_events_get_event', new BM_PE_Event( $event ) );
 }
 
 /**

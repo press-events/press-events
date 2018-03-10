@@ -11,7 +11,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
-abstract class PE_Data {
+abstract class BM_PE_Data {
 
 	/**
 	 * ID for this object.

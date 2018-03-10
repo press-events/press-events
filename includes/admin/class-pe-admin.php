@@ -24,7 +24,7 @@ class PE_Admin {
 		add_action( 'current_screen', array( $this, 'conditional_includes' ) );
 		add_action( 'admin_init', array( $this, 'buffer' ), 1 );
 		add_filter( 'admin_footer_text', array( $this, 'admin_footer_text' ), 1 );
-		add_filter( 'plugin_action_links_'. PE_PLUGIN_BASENAME, array( $this, 'add_action_links' ) );
+		add_filter( 'plugin_action_links_'. BM_PE_PLUGIN_BASENAME, array( $this, 'add_action_links' ) );
 	}
 
 	/**

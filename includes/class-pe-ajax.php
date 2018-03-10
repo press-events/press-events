@@ -42,8 +42,7 @@ class PE_Ajax {
 	 */
 	public static function define_ajax() {
 		if ( ! empty( $_GET['pe-ajax'] ) ) {
-			pe_maybe_define_constant( 'DOING_AJAX', true );
-			pe_maybe_define_constant( 'PE_DOING_AJAX', true );
+			pe_maybe_define_constant( 'BM_PE_DOING_AJAX', true );
 
 			@ini_set( 'display_errors', 0 ); // Turn off display_errors during AJAX events to prevent malformed JSON
 

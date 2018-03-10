@@ -53,21 +53,21 @@ class PE_Frontend_Assets {
 			'magnific-popup' => array(
 				'src' => self::get_asset_url( 'assets/css/magnific-popup/magnific-popup.css' ),
 				'deps' => array(),
-				'version' => PE_VERSION,
+				'version' => BM_PE_VERSION,
 				'media' => 'all',
 				'has_rtl' => false,
 			),
 			'press-events-general' => array(
 				'src' => self::get_asset_url( 'assets/css/press-events.css' ),
 				'deps' => '',
-				'version' => PE_VERSION,
+				'version' => BM_PE_VERSION,
 				'media' => 'all',
 				'has_rtl' => true,
 			),
 			'press-events-menu' => array(
 				'src' => self::get_asset_url( 'assets/css/menu.css' ),
 				'deps' => '',
-				'version' => PE_VERSION,
+				'version' => BM_PE_VERSION,
 				'media' => 'all',
 				'has_rtl' => true,
 			),
@@ -150,17 +150,17 @@ class PE_Frontend_Assets {
 			'pe-archive-event' => array(
 				'src' => self::get_asset_url( 'assets/js/frontend/press-events-archive'. $suffix .'.js' ),
 				'deps' => array( 'jquery' ),
-				'version' => PE_VERSION
+				'version' => BM_PE_VERSION
 			),
 			'pe-single-event' => array(
 				'src' => self::get_asset_url( 'assets/js/frontend/single-event'. $suffix .'.js' ),
 				'deps' => array( 'jquery', 'jquery-tiptip' ),
-				'version' => PE_VERSION,
+				'version' => BM_PE_VERSION,
 			),
 			'press-events' => array(
 				'src' => self::get_asset_url( 'assets/js/frontend/press-events'. $suffix .'.js' ),
 				'deps' => array( 'jquery' ),
-				'version' => PE_VERSION
+				'version' => BM_PE_VERSION
 			),
 		);
 
@@ -193,7 +193,7 @@ class PE_Frontend_Assets {
 	 * @param  string   $version
 	 * @param  boolean  $in_footer
 	 */
-	private static function register_script( $handle, $path, $deps = array( 'jquery' ), $version = PE_VERSION, $in_footer = true ) {
+	private static function register_script( $handle, $path, $deps = array( 'jquery' ), $version = BM_PE_VERSION, $in_footer = true ) {
 		self::$scripts[] = $handle;
 		wp_register_script( $handle, $path, $deps, $version, $in_footer );
 	}
@@ -210,7 +210,7 @@ class PE_Frontend_Assets {
 	 * @param  string   $media
 	 * @param  boolean  $has_rtl
 	 */
-	private static function register_style( $handle, $path, $deps = array(), $version = PE_VERSION, $media = 'all', $has_rtl = false ) {
+	private static function register_style( $handle, $path, $deps = array(), $version = BM_PE_VERSION, $media = 'all', $has_rtl = false ) {
 		self::$styles[] = $handle;
 		wp_register_style( $handle, $path, $deps, $version, $media );
 		if ( $has_rtl ) {
@@ -239,7 +239,7 @@ class PE_Frontend_Assets {
 	 * @param  string   $version
 	 * @param  boolean  $in_footer
 	 */
-	private static function enqueue_script( $handle, $path = '', $deps = array( 'jquery' ), $version = PE_VERSION, $in_footer = true ) {
+	private static function enqueue_script( $handle, $path = '', $deps = array( 'jquery' ), $version = BM_PE_VERSION, $in_footer = true ) {
 		if ( ! in_array( $handle, self::$scripts ) && $path ) {
 			self::register_script( $handle, $path, $deps, $version, $in_footer );
 		}
@@ -259,7 +259,7 @@ class PE_Frontend_Assets {
 	 * @param  string   $media
 	 * @param  boolean  $has_rtl
 	 */
-	private static function enqueue_style( $handle, $path = '', $deps = array(), $version = PE_VERSION, $media = 'all', $has_rtl = false ) {
+	private static function enqueue_style( $handle, $path = '', $deps = array(), $version = BM_PE_VERSION, $media = 'all', $has_rtl = false ) {
 		if ( ! in_array( $handle, self::$styles ) && $path ) {
 			self::register_style( $handle, $path, $deps, $version, $media, $has_rtl );
 		}

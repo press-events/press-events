@@ -13,7 +13,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
-abstract class PE_Object_Query {
+abstract class BM_PE_Object_Query {
 
 	/**
 	 * Stores query data.

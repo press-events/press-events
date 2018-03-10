@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class PE_Event_Organiser extends PE_Data {
+class BM_PE_Event_Organiser extends BM_PE_Data {
 
     /**
 	 * This is the name of this object type.
@@ -54,7 +54,7 @@ class PE_Event_Organiser extends PE_Data {
     /**
 	 * Get the event organiser if ID are passed, otherwise the event organiser is new and empty.
 	 *
-	 * @param int|PE_Event_Organiser|object $organisers event organisers to init.
+	 * @param int|BM_PE_Event_Organiser|object $organisers event organisers to init.
 	 */
 	public function __construct( $organiser = 0 ) {
 		parent::__construct( $organiser );

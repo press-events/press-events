@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * PE_Install Class.
+ * BM_PE_Install Class.
  */
-class PE_Install {
+class BM_PE_Install {
 
 	/**
 	 * Install Press Events
@@ -35,7 +35,7 @@ class PE_Install {
  	 * @since 1.0.0
  	 */
  	private static function setup_environment() {
-		PE_Post_types::register_post_types();
+		BM_PE_Post_types::register_post_types();
  	}
 
 	/**

@@ -29,7 +29,7 @@ function pe_get_organisers( $args = array() ) {
 
 	foreach ( $users as $user ) {
 		try {
-			$organisers[$user->ID] = new PE_Event_Organiser($user->ID);
+			$organisers[$user->ID] = new BM_PE_Event_Organiser($user->ID);
 		} catch (Exception $e) {
 			// Organiser dosen't exist
 		}
@@ -37,7 +37,7 @@ function pe_get_organisers( $args = array() ) {
 
 	// Add empty
 	if ( isset( $args['include'] ) && is_array( $args['include'] ) && in_array( 0, $args['include'] ) ) {
-		$organisers[0] = new PE_Event_Organiser(0);
+		$organisers[0] = new BM_PE_Event_Organiser(0);
 	}
 
 	return $organisers;

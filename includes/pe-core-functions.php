@@ -16,12 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Include core functions
  */
-include( PE_ABSPATH . 'includes/pe-formatting-functions.php' );
-include( PE_ABSPATH . 'includes/pe-conditional-functions.php' );
-include( PE_ABSPATH . 'includes/pe-term-functions.php' );
-include( PE_ABSPATH . 'includes/pe-event-functions.php' );
-include( PE_ABSPATH . 'includes/pe-location-functions.php' );
-include( PE_ABSPATH . 'includes/pe-organiser-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-formatting-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-conditional-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-term-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-event-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-location-functions.php' );
+include( BM_PE_ABSPATH . 'includes/pe-organiser-functions.php' );
 
 /**
  * Get saved setting from given section
@@ -71,7 +71,7 @@ function pe_get_template_part( $slug, $name = '' ) {
 	$template = '';
 
 	// Look in yourtheme/slug-name.php and yourtheme/press-events/slug-name.php
-	if ( $name && ! PE_TEMPLATE_DEBUG_MODE ) {
+	if ( $name && ! BM_PE_TEMPLATE_DEBUG_MODE ) {
 		$template = locate_template( array( "{$slug}-{$name}.php", BM_Press_Events()->template_path() . "{$slug}-{$name}.php" ) );
 	}
 
@@ -81,7 +81,7 @@ function pe_get_template_part( $slug, $name = '' ) {
 	}
 
 	// If template file doesn't exist, look in yourtheme/slug.php and yourtheme/press-events/slug.php
-	if ( ! $template && ! PE_TEMPLATE_DEBUG_MODE ) {
+	if ( ! $template && ! BM_PE_TEMPLATE_DEBUG_MODE ) {
 		$template = locate_template( array( "{$slug}.php", BM_Press_Events()->template_path() . "{$slug}.php" ) );
 	}
 

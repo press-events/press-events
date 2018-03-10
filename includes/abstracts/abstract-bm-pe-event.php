@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class PE_Event extends PE_Data {
+class BM_PE_Event extends BM_PE_Data {
 
     /**
 	 * This is the name of this object type.
@@ -64,7 +64,7 @@ class PE_Event extends PE_Data {
     /**
 	 * Get the event if ID is passed, otherwise the event is new and empty.
 	 *
-	 * @param int|PE_Event|object $event event to init.
+	 * @param int|BM_PE_Event|object $event event to init.
 	 */
 	public function __construct( $event = 0 ) {
 		parent::__construct( $event );
@@ -287,7 +287,7 @@ class PE_Event extends PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_Event_Location|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_Event_Location|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_event_location( $context = 'view' ) {
 		return $this->get_prop( 'event_location', $context );
@@ -298,7 +298,7 @@ class PE_Event extends PE_Data {
 	 *
      * @since 1.0.0
 	 * @param string $context What the value is for. Valid values are view and edit.
-	 * @return PE_Event_Organiser|NULL object if the date is set or null if there is no date.
+	 * @return BM_PE_Event_Organiser|NULL object if the date is set or null if there is no date.
 	 */
 	public function get_event_organisers( $context = 'view' ) {
 		return $this->get_prop( 'event_organisers', $context );
@@ -540,10 +540,10 @@ class PE_Event extends PE_Data {
 	 */
 	public function set_event_location( $location ) {
         try {
-    		$this->set_prop( 'event_location', new PE_Event_Location($location) );
+    		$this->set_prop( 'event_location', new BM_PE_Event_Location($location) );
         } catch (Exception $e) {
-            // Return empty PE_Event_Location
-            $this->set_prop( 'event_location', new PE_Event_Location(0) );
+            // Return empty BM_PE_Event_Location
+            $this->set_prop( 'event_location', new BM_PE_Event_Location(0) );
         }
 	}
 
@@ -558,7 +558,7 @@ class PE_Event extends PE_Data {
 
         foreach ( $organisers_ids as $id ) {
             try {
-                $organisers[] = new PE_Event_Organiser($id);
+                $organisers[] = new BM_PE_Event_Organiser($id);
             } catch (Exception $e) {
                 // Organiser dosen't exist
             }
