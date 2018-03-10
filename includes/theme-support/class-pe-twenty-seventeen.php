@@ -24,7 +24,7 @@ class PE_Twenty_Seventeen {
      * Filter body classes on event pages
      */
     public function body_classes( $classes ) {
-        $is_event_view = is_press_events();
+        $is_event_view = is_BM_Press_Events();
 
         /**
          * Remove sidebar from event views

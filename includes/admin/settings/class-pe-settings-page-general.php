@@ -88,7 +88,7 @@ class PE_Settings_Page_General {
 				'help' => __( 'The default country for your event locations. This is overridden in each event.', 'press-events' ),
 				'type' => 'select',
 				'default' => 'GB',
-				'options' => Press_Events()->countries->get_countries()
+				'options' => BM_Press_Events()->countries->get_countries()
 			)
 		);
 

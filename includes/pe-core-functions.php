@@ -72,17 +72,17 @@ function pe_get_template_part( $slug, $name = '' ) {
 
 	// Look in yourtheme/slug-name.php and yourtheme/press-events/slug-name.php
 	if ( $name && ! PE_TEMPLATE_DEBUG_MODE ) {
-		$template = locate_template( array( "{$slug}-{$name}.php", Press_Events()->template_path() . "{$slug}-{$name}.php" ) );
+		$template = locate_template( array( "{$slug}-{$name}.php", BM_Press_Events()->template_path() . "{$slug}-{$name}.php" ) );
 	}
 
 	// Get default slug-name.php
-	if ( ! $template && $name && file_exists( Press_Events()->plugin_path() . "/templates/{$slug}-{$name}.php" ) ) {
-		$template = Press_Events()->plugin_path() . "/templates/{$slug}-{$name}.php";
+	if ( ! $template && $name && file_exists( BM_Press_Events()->plugin_path() . "/templates/{$slug}-{$name}.php" ) ) {
+		$template = BM_Press_Events()->plugin_path() . "/templates/{$slug}-{$name}.php";
 	}
 
 	// If template file doesn't exist, look in yourtheme/slug.php and yourtheme/press-events/slug.php
 	if ( ! $template && ! PE_TEMPLATE_DEBUG_MODE ) {
-		$template = locate_template( array( "{$slug}.php", Press_Events()->template_path() . "{$slug}.php" ) );
+		$template = locate_template( array( "{$slug}.php", BM_Press_Events()->template_path() . "{$slug}.php" ) );
 	}
 
 	// Allow 3rd party plugins to filter template file from their plugin.
@@ -140,11 +140,11 @@ function pe_get_template( $template_name, $args = array(), $template_path = '', 
  */
 function pe_locate_template( $template_name, $template_path = '', $default_path = '' ) {
 	if ( ! $template_path ) {
-		$template_path = Press_Events()->template_path();
+		$template_path = BM_Press_Events()->template_path();
 	}
 
 	if ( ! $default_path ) {
-		$default_path = Press_Events()->plugin_path() . '/templates/';
+		$default_path = BM_Press_Events()->plugin_path() . '/templates/';
 	}
 
 	// Look within the theme

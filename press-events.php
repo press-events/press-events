@@ -33,7 +33,7 @@ include_once dirname( __FILE__ ) . '/includes/class-press-events.php';
  *
  * @since 1.0.0
  */
-function Press_Events() {
+function BM_Press_Events() {
 	return Press_Events::instance();
 }
-Press_Events();
+BM_Press_Events();

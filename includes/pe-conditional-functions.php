@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return bool
  */
-function is_press_events() {
+function is_BM_Press_Events() {
 	return apply_filters( 'is_press_events', ( is_event() || is_event_taxonomy() || is_event_archive() ) ? true : false );
 }
 

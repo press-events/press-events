@@ -373,7 +373,7 @@ class PE_Ajax {
 		check_ajax_referer( 'get-calendar', 'security' );
 
 		// Get data
-		$query_vars = Press_Events()->query->get_query_vars();
+		$query_vars = BM_Press_Events()->query->get_query_vars();
 		$data = array(
 			'archive_query' => get_query_var( $query_vars['archive_query'] ),
 			'archive_type' => get_query_var( $query_vars['archive_type'] ) !== '' ? get_query_var( $query_vars['archive_type'] ) : pe_get_option( 'archive-type', 'pe-general-events', 'list' ),
