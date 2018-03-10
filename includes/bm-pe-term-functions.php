@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return array
  */
-function pe_get_terms( $args = array() ) {
+function bm_pe_get_terms( $args = array() ) {
 	$defaults = array(
 		'taxonomy' => 'pe_event_tag'
 	);

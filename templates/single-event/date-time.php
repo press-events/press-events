@@ -43,7 +43,7 @@ global $event;
 
     <?php
 		// Timezone
-		if ( bm_pe_timezone_offset() == pe_event_timezone_offset( $event->get_id() ) ) {
+		if ( bm_pe_timezone_offset() == bm_pe_event_timezone_offset( $event->get_id() ) ) {
 
 			$tzstring = '';
 

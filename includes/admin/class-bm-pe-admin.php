@@ -74,7 +74,7 @@ class BM_PE_Admin {
 		$current_screen = get_current_screen();
 
 		// Check to make sure we're on a Press Events admin page.
-		if ( isset( $current_screen->id ) && apply_filters( 'press_events_display_admin_footer_text', in_array( $current_screen->id, pe_get_screen_ids() ) ) ) {
+		if ( isset( $current_screen->id ) && apply_filters( 'press_events_display_admin_footer_text', in_array( $current_screen->id, bm_pe_get_screen_ids() ) ) ) {
 			$footer_text = __( 'Thank you for using Press Events.', 'press-events' );
 		}
 

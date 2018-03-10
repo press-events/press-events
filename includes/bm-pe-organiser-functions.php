@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-function pe_get_organisers( $args = array() ) {
+function bm_pe_get_organisers( $args = array() ) {
 	$args['role__in'] = apply_filters( 'event_organiser_roles', array(
 		'event_organiser'
 	) );

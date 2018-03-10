@@ -41,7 +41,7 @@ global $calendar;
 				}
 
 				if ( ! $has_event ) {
-					do_action( 'press_events_no_events_found' );
+					do_action( 'bm_pe_no_events_found' );
 				}
 			?>
 

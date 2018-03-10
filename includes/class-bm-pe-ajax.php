@@ -127,7 +127,7 @@ class BM_PE_Ajax {
 	public function get_location() {
 		check_ajax_referer( 'get-location', 'security' );
 
-		$location = pe_get_location( $_POST['event_location_id'] );
+		$location = bm_pe_get_location( $_POST['event_location_id'] );
 
 		// success
 	    wp_send_json_success( array(
@@ -187,7 +187,7 @@ class BM_PE_Ajax {
             'new' => array( __( 'Add new location', 'press-events' ) )
         );
 
-		foreach ( pe_get_locations( array(
+		foreach ( bm_pe_get_locations( array(
 			'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC'
 		) ) as $order => $location ) {
 			$options[ $location->get_id('edit') ] = array(
@@ -200,7 +200,7 @@ class BM_PE_Ajax {
 
 		ob_start();
 
-		pe_select_input( array(
+		bm_pe_select_input( array(
 	        'id' => '_event_location_select',
 	        'label' => __( 'Add a location', 'press-events' ),
 	        'options' => $options,
@@ -260,7 +260,7 @@ class BM_PE_Ajax {
 			wp_send_json_error( __( 'No ids set', 'press-events' ) );
 		}
 
-		$get_organisers = pe_get_organisers( array(
+		$get_organisers = bm_pe_get_organisers( array(
 			'include' => $ids
 		) );
 
@@ -335,7 +335,7 @@ class BM_PE_Ajax {
 			)
         );
 
-		foreach ( pe_get_organisers() as $organiser ) {
+		foreach ( bm_pe_get_organisers() as $organiser ) {
 			$options[ $organiser->get_id('edit') ] = array(
 				$organiser->get_title( 'edit' ),
 				'custom_attributes' => array(
@@ -346,7 +346,7 @@ class BM_PE_Ajax {
 
 		ob_start();
 
-		pe_select_input( array(
+		bm_pe_select_input( array(
 	        'id' => '_event_organiser_select',
 	        'label' => __( 'Add an organiser', 'press-events' ),
 	        'options' => $options,

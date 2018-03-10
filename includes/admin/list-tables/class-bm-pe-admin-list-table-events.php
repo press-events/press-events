@@ -109,7 +109,7 @@ class BM_PE_Admin_List_Table_Events extends BM_PE_Admin_List_Table {
 		$end_time = bm_pe_format_datetime( $this->object->get_event_end(), bm_pe_time_format() );
 
 		// Timezone
-		if ( bm_pe_timezone_offset() == pe_event_timezone_offset( $this->object->get_id() ) ) {
+		if ( bm_pe_timezone_offset() == bm_pe_event_timezone_offset( $this->object->get_id() ) ) {
 
 			$tzstring = '';
 

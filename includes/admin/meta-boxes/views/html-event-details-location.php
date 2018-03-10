@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             'new' => array( __( 'Add new location', 'press-events' ) )
         );
 
-		foreach ( pe_get_locations( array(
+		foreach ( bm_pe_get_locations( array(
 			'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC'
 		) ) as $order => $location ) {
 			$options[ $location->get_id('edit') ] = array(
@@ -25,14 +25,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
     <!-- Select location -->
-    <?php pe_select_input( array(
+    <?php bm_pe_select_input( array(
         'id' => '_event_location_select',
         'label' => __( 'Add a location', 'press-events' ),
         'options' => $options
     ) ); ?>
 
  	<!-- Hidden input (contains event location) -->
-    <?php pe_hidden_input( array(
+    <?php bm_pe_hidden_input( array(
         'id' => '_event_location',
 		'value' => $event->get_event_location()->get_id() > 0 ? $event->get_event_location()->get_id() : ''
     ) ); ?>
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<div class="edit-wrapper">
 
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id' => null,
 					'name' => 'location_title',
 					'label' => __( 'Location title', 'press-events' ),
@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="input-wrapper">
 						<div class="sub-input">
 							<label for="event_location_address"><?php _e( 'Street address', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'location_address',
 								'id' => null,
 								'bare' => true,
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-left">
 							<label for="event_location_city"><?php _e( 'Town/City', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'location_city',
 								'id' => null,
 								'bare' => true,
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-right">
 							<label for="event_location_postcode"><?php _e( 'Postal/Zip Code', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'location_postcode',
 								'id' => null,
 								'bare' => true,
@@ -99,7 +99,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-left">
 							<label for="event_location_county"><?php _e( 'County', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'location_county',
 								'id' => null,
 								'bare' => true,
@@ -109,7 +109,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-right">
 							<label for="event_location_country"><?php _e( 'Country', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'location_country',
 								'id' => null,
 								'bare' => true,
@@ -136,7 +136,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</script>
 
 	<!-- Show Google Map -->
-	<?php pe_hidden_input( array(
+	<?php bm_pe_hidden_input( array(
 		'id' => '_show_google_map',
 		'value' => 'no'
 	) ); ?>
@@ -154,7 +154,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					); ?></p>
 				</div>
 			<?php else :
-				pe_checkbox( array(
+				bm_pe_checkbox( array(
 					'id' => '_show_google_map',
 					'label' => __( 'Show Google Map', 'press-events' ),
 					'bare' => true

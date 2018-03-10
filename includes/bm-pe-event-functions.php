@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Function for returning events
  */
-function bm_bm_pe_get_events( $args = array() ) {
+function bm_pe_get_events( $args = array() ) {
 	$query = new BM_PE_Event_Query( $args );
 	return $query->get_events();
 }
@@ -48,7 +48,7 @@ function bm_pe_get_event( $event = null ) {
  * @since 1.0.0
  * @return string PHP timezone string for an event
  */
-function pe_event_timezone_string( $event_id = false ) {
+function bm_pe_event_timezone_string( $event_id = false ) {
 	if ( ! $event_id ) {
 		$event_id = get_the_ID();
 	}
@@ -91,7 +91,7 @@ function pe_event_timezone_string( $event_id = false ) {
  * @since 1.0.0
  * @return float
  */
-function pe_event_timezone_offset( $event_id = false ) {
+function bm_pe_event_timezone_offset( $event_id = false ) {
 	if ( ! $event_id ) {
 		$event_id = get_the_ID();
 	}

@@ -84,7 +84,7 @@ class BM_PE_Meta_Box_Event_Details {
 	 */
 	private static function output_tabs() {
 		global $post, $event;
-		$event = $post->ID ? bm_pe_get_event( $post->ID ) : new PE_Event;
+		$event = $post->ID ? bm_pe_get_event( $post->ID ) : new BM_PE_Event;
 
 		include( 'views/html-event-details-date-time.php' );
 		include( 'views/html-event-details-location.php' );

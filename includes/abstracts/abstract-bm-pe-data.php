@@ -689,8 +689,8 @@ abstract class BM_PE_Data {
 
             if ( $event_id ) {
                 $timezone_set = get_post_meta( $event_id, '_event_timezone_string', true ) ? true : false;
-                $timezone_offset = pe_event_timezone_offset( $event_id );
-                $timezone_string = pe_event_timezone_string( $event_id );
+                $timezone_offset = bm_pe_event_timezone_offset( $event_id );
+                $timezone_string = bm_pe_event_timezone_string( $event_id );
             } else {
                 $timezone_set = get_option('timezone_string') ? true : false;
                 $timezone_offset = bm_pe_timezone_offset();

@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * When the_post is called, put event data into a global.
  *
  * @param mixed $post Post Object.
- * @return PE_Event
+ * @return BM_PE_Event
  */
-function pe_setup_event_data( $post ) {
+function bm_pe_setup_event_data( $post ) {
 	unset( $GLOBALS['event'] );
 
 	if ( is_int( $post ) ) {
@@ -36,7 +36,7 @@ function pe_setup_event_data( $post ) {
 
 	return $GLOBALS['event'];
 }
-add_action( 'the_post', 'pe_setup_event_data' );
+add_action( 'the_post', 'bm_pe_setup_event_data' );
 
 /**
  * Add body classes for Events pages.
@@ -44,7 +44,7 @@ add_action( 'the_post', 'pe_setup_event_data' );
  * @param  array $classes Body Classes.
  * @return array
  */
-function pe_body_class( $classes ) {
+function bm_pe_body_class( $classes ) {
 	$classes = (array) $classes;
 
 	if ( is_BM_Press_Events() ) {
@@ -64,7 +64,7 @@ function pe_body_class( $classes ) {
  * @param int $post_id Post ID.
  * @return array
  */
-function pe_event_post_class( $classes, $class = '', $post_id = '' ) {
+function bm_pe_event_post_class( $classes, $class = '', $post_id = '' ) {
 	if ( ! $post_id || ! in_array( get_post_type( $post_id ), array( 'pe_event' ), true ) ) {
 		return $classes;
 	}
@@ -92,7 +92,7 @@ function pe_event_post_class( $classes, $class = '', $post_id = '' ) {
 /**
  * Output generator tag.
  */
-function pe_generator_tag( $gen, $type ) {
+function bm_pe_generator_tag( $gen, $type ) {
     switch ( $type ) {
 		case 'html':
             $gen .= "\n" . '<meta name="generator" content="Press Events ' . esc_attr( BM_PE_VERSION ) . '">';
@@ -108,7 +108,7 @@ function pe_generator_tag( $gen, $type ) {
 /**
  * Output generator tag.
  */
-function pe_taxonomy_url( $termlink, $term, $taxonomy ) {
+function bm_pe_taxonomy_url( $termlink, $term, $taxonomy ) {
 	if ( $taxonomy == 'pe_event_category' ) {
         $query_vars = BM_Press_Events()->query->get_query_vars();
 		$termlink = add_query_arg( $query_vars['archive_category'], $term->slug, get_post_type_archive_link( 'pe_event' ) );
@@ -120,11 +120,11 @@ function pe_taxonomy_url( $termlink, $term, $taxonomy ) {
 	return $termlink;
 }
 
-if ( ! function_exists( 'press_events_set_calendar_global' ) ) {
+if ( ! function_exists( 'bm_pe_set_calendar_global' ) ) {
 	/**
 	 * Set the global calendar event.
 	 */
-	function press_events_set_calendar_global( $vars = false ) {
+	function bm_pe_set_calendar_global( $vars = false ) {
 		if ( ! $vars ) {
 			$query_vars = BM_Press_Events()->query->get_query_vars();
 			$vars = array(
@@ -140,33 +140,33 @@ if ( ! function_exists( 'press_events_set_calendar_global' ) ) {
 	}
 }
 
-if ( ! function_exists( 'press_events_archive_header' ) ) {
+if ( ! function_exists( 'bm_pe_archive_header' ) ) {
 	/**
 	 * Output the event archive header.
 	 */
-	function press_events_archive_header() {
+	function bm_pe_archive_header() {
 		if ( ! is_ajax() ) {
 			bm_pe_get_template( 'archive/header.php' );
 		}
 	}
 }
 
-if ( ! function_exists( 'press_events_archive_filters' ) ) {
+if ( ! function_exists( 'bm_pe_archive_filters' ) ) {
 	/**
 	 * Output the event filters.
 	 */
-	function press_events_archive_filters() {
+	function bm_pe_archive_filters() {
 		if ( ! is_ajax() ) {
 			bm_pe_get_template( 'archive/filters.php' );
 		}
 	}
 }
 
-if ( ! function_exists( 'press_events_no_events_found' ) ) {
+if ( ! function_exists( 'bm_pe_no_events_found' ) ) {
 	/**
 	 * Output the no events found notice
 	 */
-	function press_events_no_events_found() {
+	function bm_pe_no_events_found() {
 		bm_pe_get_template( 'archive/no-events-found.php' );
 	}
 }
@@ -174,92 +174,92 @@ if ( ! function_exists( 'press_events_no_events_found' ) ) {
 /**
  * Single event
  */
-if ( !function_exists( 'press_events_single_event_archive_link' ) ) {
+if ( !function_exists( 'bm_pe_single_event_archive_link' ) ) {
 	/**
 	 * Output the event archive button.
 	 */
-	function press_events_single_event_archive_link() {
+	function bm_pe_single_event_archive_link() {
 		bm_pe_get_template( 'single-event/all-events.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_title' ) ) {
+if ( !function_exists( 'bm_pe_single_event_title' ) ) {
 	/**
 	 * Output the event title in event summary.
 	 */
-	function press_events_single_event_title() {
+	function bm_pe_single_event_title() {
 		bm_pe_get_template( 'single-event/title.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_date' ) ) {
+if ( !function_exists( 'bm_pe_single_event_date' ) ) {
 	/**
 	 * Output the event date below the title.
 	 */
-	function press_events_single_event_date() {
+	function bm_pe_single_event_date() {
 		bm_pe_get_template( 'single-event/title-date.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_featured_image' ) ) {
+if ( !function_exists( 'bm_pe_single_event_featured_image' ) ) {
 	/**
 	 * Output the event image before the event summary.
 	 */
-	function press_events_single_event_featured_image() {
+	function bm_pe_single_event_featured_image() {
 		bm_pe_get_template( 'single-event/featured-image.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_description' ) ) {
+if ( !function_exists( 'bm_pe_single_event_description' ) ) {
 	/**
 	 * Output the event description.
 	 */
-	function press_events_single_event_description() {
+	function bm_pe_single_event_description() {
 		bm_pe_get_template( 'single-event/description.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_date_time' ) ) {
+if ( !function_exists( 'bm_pe_single_event_date_time' ) ) {
 	/**
 	 * Output the event date & time.
 	 */
-	function press_events_single_event_date_time() {
+	function bm_pe_single_event_date_time() {
 		bm_pe_get_template( 'single-event/date-time.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_organisers' ) ) {
+if ( !function_exists( 'bm_pe_single_event_organisers' ) ) {
 	/**
 	 * Output the event organisers.
 	 */
-	function press_events_single_event_organisers() {
+	function bm_pe_single_event_organisers() {
 		bm_pe_get_template( 'single-event/organisers.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_location' ) ) {
+if ( !function_exists( 'bm_pe_single_event_location' ) ) {
 	/**
 	 * Output the event location..
 	 */
-	function press_events_single_event_location() {
+	function bm_pe_single_event_location() {
 		bm_pe_get_template( 'single-event/location.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_share' ) ) {
+if ( !function_exists( 'bm_pe_single_event_share' ) ) {
 	/**
 	 * Output the event social share.
 	 */
-	function press_events_single_event_share() {
+	function bm_pe_single_event_share() {
 		bm_pe_get_template( 'single-event/share.php' );
 	}
 }
 
-if ( !function_exists( 'press_events_single_event_tags' ) ) {
+if ( !function_exists( 'bm_pe_single_event_tags' ) ) {
 	/**
 	 * Output the event tags.
 	 */
-	function press_events_single_event_tags() {
+	function bm_pe_single_event_tags() {
 		bm_pe_get_template( 'single-event/tags.php' );
 	}
 }

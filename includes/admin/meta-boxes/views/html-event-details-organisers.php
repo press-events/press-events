@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			)
         );
 
-		foreach ( pe_get_organisers() as $organiser ) {
+		foreach ( bm_pe_get_organisers() as $organiser ) {
 			$options[ $organiser->get_id('edit') ] = array(
 				$organiser->get_title( 'edit' ),
 				'custom_attributes' => array(
@@ -28,14 +28,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
     <!-- Select location -->
-    <?php pe_select_input( array(
+    <?php bm_pe_select_input( array(
         'id' => '_event_organiser_select',
         'label' => __( 'Add an organiser', 'press-events' ),
         'options' => $options
     ) ); ?>
 
 	<!-- Hidden input (contains all event organisers) -->
-    <?php pe_hidden_input( array(
+    <?php bm_pe_hidden_input( array(
         'id' => '_event_organisers'
     ) ); ?>
 
@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-left">
 							<label for="display_name"><?php _e( 'Display name', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'display_name',
 								'id' => null,
 								'bare' => true,
@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-right">
 							<label for="user_email"><?php _e( 'Contact email', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'user_email',
 								'id' => null,
 								'bare' => true,
@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-left">
 							<label for="user_url"><?php _e( 'Website URL', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'user_url',
 								'id' => null,
 								'bare' => true,
@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 						<div class="sub-input half-right">
 							<label for="user_phone"><?php _e( 'Phone number', 'press-events' ); ?></label>
-							<?php pe_text_input( array(
+							<?php bm_pe_text_input( array(
 								'name' => 'user_phone',
 								'id' => null,
 								'bare' => true,

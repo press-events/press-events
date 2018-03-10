@@ -48,7 +48,7 @@ class BM_PE_Calendar {
     /**
      * An array of this months events
      *
-	 * @var array of PE_Event objects
+	 * @var array of BM_PE_Event objects
      */
     private $events = false;
 
@@ -213,7 +213,7 @@ class BM_PE_Calendar {
 	 * Get all the events within this month
      */
     private function set_events() {
-        $this->events = bm_bm_pe_get_events( array(
+        $this->events = bm_pe_get_events( array(
             's' => $this->calendar_args['archive_query'],
             'tax_query' => $this->get_tax_query(),
             'meta_query' => $this->get_meta_query()

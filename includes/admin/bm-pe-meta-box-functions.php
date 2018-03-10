@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param array $field
  */
-function pe_text_input( $field ) {
+function bm_pe_text_input( $field ) {
 	global $post;
 
 	$field['placeholder'] = isset( $field['placeholder'] ) ? $field['placeholder'] : '';
@@ -64,7 +64,7 @@ function pe_text_input( $field ) {
  *
  * @param array $field
  */
-function pe_hidden_input( $field ) {
+function bm_pe_hidden_input( $field ) {
 	global $post;
 
 	$field['value'] = isset( $field['value'] ) ? $field['value'] : get_post_meta( $post->ID, $field['id'], true );
@@ -78,7 +78,7 @@ function pe_hidden_input( $field ) {
  *
  * @param array $field
  */
-function pe_checkbox( $field ) {
+function bm_pe_checkbox( $field ) {
 	global $post;
 
 	$field['class'] = isset( $field['class'] ) ? $field['class'] : '';
@@ -125,7 +125,7 @@ function pe_checkbox( $field ) {
  *
  * @param array $field
  */
-function pe_select_input( $field ) {
+function bm_pe_select_input( $field ) {
 	global $post;
 
 	$field['class'] = isset( $field['class'] ) ? $field['class'] : '';
@@ -187,7 +187,7 @@ function pe_select_input( $field ) {
  *
  * @param array $field
  */
-function pe_textarea_input( $field ) {
+function bm_pe_textarea_input( $field ) {
  	global $post;
 
  	$field['placeholder']   = isset( $field['placeholder'] ) ? $field['placeholder'] : '';

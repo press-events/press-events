@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return array
  */
-function pe_get_screen_ids() {
+function bm_pe_get_screen_ids() {
 	$screen_ids = array(
 		'edit-pe_event',
 		'pe_event',

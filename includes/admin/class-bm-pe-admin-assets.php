@@ -51,7 +51,7 @@ class BM_PE_Admin_Assets {
 		wp_enqueue_style( 'press_events_admin_menu_styles' );
 
 		// Admin styles for PE pages only
-		if ( in_array( $screen_id, pe_get_screen_ids() ) ) {
+		if ( in_array( $screen_id, bm_pe_get_screen_ids() ) ) {
 			wp_enqueue_style( 'press_events_admin_styles' );
 			wp_enqueue_style( 'wp-color-picker' );
 		}
@@ -108,7 +108,7 @@ class BM_PE_Admin_Assets {
 		wp_localize_script( 'press-events-admin', 'pe_admin_vars', $params );
 
 		// Press Events admin pages.
-		if ( in_array( $screen_id, pe_get_screen_ids() ) ) {
+		if ( in_array( $screen_id, bm_pe_get_screen_ids() ) ) {
 			wp_enqueue_script( 'press-events-admin' );
 			wp_enqueue_script( 'jquery-ui-sortable' );
 			wp_enqueue_script( 'wp-color-picker' );

@@ -123,7 +123,7 @@ class BM_PE_Event extends BM_PE_Data {
 
 		$this->set_props( array(
             'all_day_event' => get_post_meta( $id, '_all_day_event', true ),
-            'timezone' => pe_event_timezone_string( $id ),
+            'timezone' => bm_pe_event_timezone_string( $id ),
             'event_start' => get_post_meta( $id, '_event_starts', true ),
             'event_end' => get_post_meta( $id, '_event_ends', true ),
             'event_location' => get_post_meta( $id, '_event_location', true ),

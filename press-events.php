@@ -3,7 +3,7 @@
  * Plugin Name: Press Events
  * Plugin URI: https://pressevents.xyz/
  * Description: An event managment plugin that helps you manage and share events.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Burn Media Ltd
  * Author URI: http://burnmedia.co.uk/
  * Requires at least: 4.5

@@ -6,11 +6,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div id="date_time_event_details" class="active">
 	<!-- All day event -->
-	<?php pe_hidden_input( array(
+	<?php bm_pe_hidden_input( array(
 		'id'    => '_all_day_event',
 		'value' => 'no',
 	) ); ?>
-	<?php pe_checkbox( array(
+	<?php bm_pe_checkbox( array(
 		'id'    => '_all_day_event',
 		'label' => __( 'All day event', 'press-events' ),
 	) ); ?>
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<div class="event-time-wrap left">
 				<!-- Hidden input for datepicker -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => 'start_date_picker',
 					'value' => $start_date == '' ? date( 'o-m-d' ) : date( 'o-m-d', strtotime($start_date) ),
 					'class' => 'start date',
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					)
 				) ); ?>
 				<!-- Visible input for 'pretty' format -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => '_event_start_date',
 					'label' => __( 'Start date', 'press-events' ),
 					'value' => $start_date == '' ? date( $date_format ) : $start_date,
@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				) ); ?>
 
 				<!-- Time input -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => '_event_start_time',
 					'label' => __( 'Start time', 'press-events' ),
 					'value' => $start_time == '' ? date( $time_format, 32400 ) : $start_time,
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				?>
 
 				<!-- Time input -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => '_event_end_time',
 					'label' => __( 'End time', 'press-events' ),
 					'value' => $end_time == '' ? date( $time_format, 36000 ) : $end_time,
@@ -82,7 +82,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				) ); ?>
 
 				<!-- Hidden input for datepicker -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => 'end_date_picker',
 					'value' => $end_date == '' ? date( 'o-m-d' ) : date( 'o-m-d', strtotime($end_date) ),
 					'class' => 'end date',
@@ -92,7 +92,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					)
 				) ); ?>
 				<!-- Visible input for 'pretty' format -->
-				<?php pe_text_input( array(
+				<?php bm_pe_text_input( array(
 					'id'    => '_event_end_date',
 					'label' => __( 'End date', 'press-events' ),
 					'value' => $end_date == '' ? date( $date_format ) : $end_date,

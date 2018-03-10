@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Get an event location
  */
-function pe_get_location( $location = null ) {
+function bm_pe_get_location( $location = null ) {
 	if ( ! did_action( 'press_events_init' ) ) {
 		return false;
 	}
@@ -35,13 +35,13 @@ function pe_get_location( $location = null ) {
 /**
  * Get all the locations
  */
-function pe_get_locations( $args = array() ) {
+function bm_pe_get_locations( $args = array() ) {
     $args['post_type'] = 'pe_event_location';
 
 	$results = new WP_Query( $args );
 
 	if ( $results->posts ) {
-		$results->posts = array_map( 'pe_get_location', $results->posts );
+		$results->posts = array_map( 'bm_pe_get_location', $results->posts );
 	}
 
 	return apply_filters( 'press_events_event_location_object_query', $results->posts, $args );

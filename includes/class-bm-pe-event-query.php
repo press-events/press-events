@@ -48,7 +48,7 @@ class BM_PE_Event_Query extends BM_PE_Object_Query {
 	/**
 	 * Get events matching the current query vars.
 	 *
-	 * @return array|object of PE_Event objects
+	 * @return array|object of BM_PE_Event objects
 	 */
 	public function get_events() {
 		$args = apply_filters( 'press_events_event_object_query_args', $this->get_query_vars() );

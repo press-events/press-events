@@ -28,7 +28,7 @@ $query_vars = BM_Press_Events()->query->get_query_vars();
 			<input type="text" name="<?php echo $query_vars['archive_query']; ?>" placeholder="<?php _e( 'Search', 'press-events' ); ?>" value="<?php echo $calendar->calendar_args['archive_query']; ?>">
 		</div>
 
-		<?php if ( $categories = pe_get_terms(array(
+		<?php if ( $categories = bm_pe_get_terms(array(
 			'taxonomy' => 'pe_event_category',
 			'hide_empty' => false
 		)) ) { ?>
@@ -49,7 +49,7 @@ $query_vars = BM_Press_Events()->query->get_query_vars();
 
 	<div class="filters-wrapper">
 
-		<?php if ( $tags = pe_get_terms(array(
+		<?php if ( $tags = bm_pe_get_terms(array(
 			'taxonomy' => 'pe_event_tag',
 			'hide_empty' => false
 		)) ) { ?>
