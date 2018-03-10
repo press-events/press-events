@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'PE_User_Contacts', false ) ) :
 
 /**
- * PE_User_Contacts Class.
+ * BM_PE_User_Contacts Class.
  */
-class PE_User_Contacts {
+class BM_PE_User_Contacts {
 
     /**
 	 * Hook in sections.
@@ -37,4 +37,4 @@ class PE_User_Contacts {
 
 endif;
 
-new PE_User_Contacts();
+new BM_PE_User_Contacts();

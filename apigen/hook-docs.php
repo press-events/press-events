@@ -2,7 +2,7 @@
 /**
  * Generate documentation for hooks in PE
  */
-class PE_HookFinder {
+class BM_PE_HookFinder {
 	private static $current_file           = '';
 	private static $files_to_scan          = array();
 	private static $pattern_custom_actions = '/do_action(.*?);/i';
@@ -222,4 +222,4 @@ class PE_HookFinder {
 	}
 }
 
-PE_HookFinder::process_hooks();
+BM_PE_HookFinder::process_hooks();

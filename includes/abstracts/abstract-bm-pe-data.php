@@ -353,7 +353,7 @@ abstract class BM_PE_Data {
 				$meta = (array) $meta;
 
 				if ( isset( $meta['key'], $meta['value'], $meta['id'] ) ) {
-					$this->meta_data[] = new PE_Meta_Data( array(
+					$this->meta_data[] = new BM_PE_Meta_Data( array(
 						'id'    => $meta['id'],
 						'key'   => $meta['key'],
 						'value' => $meta['value'],
@@ -386,7 +386,7 @@ abstract class BM_PE_Data {
 			$this->delete_meta_data( $key );
 		}
 
-		$this->meta_data[] = new PE_Meta_Data( array(
+		$this->meta_data[] = new BM_PE_Meta_Data( array(
 			'key'   => $key,
 			'value' => $value,
 		) );
@@ -488,7 +488,7 @@ abstract class BM_PE_Data {
 		$raw_meta_data = $this->data_store->read_meta( $this );
 		if ( $raw_meta_data ) {
 			foreach ( $raw_meta_data as $meta ) {
-				$this->meta_data[] = new PE_Meta_Data( array(
+				$this->meta_data[] = new BM_PE_Meta_Data( array(
 					'id'    => (int) $meta->meta_id,
 					'key'   => $meta->meta_key,
 					'value' => maybe_unserialize( $meta->meta_value ),
@@ -591,7 +591,7 @@ abstract class BM_PE_Data {
     			if ( ! is_null( $value ) && is_callable( array( $this, $setter ) ) ) {
                     $this->{$setter}( $value );
     			}
-            } catch ( PE_Data_Exception $e ) {
+            } catch ( BM_PE_Data_Exception $e ) {
 				$errors->add( $e->getErrorCode(), $e->getMessage() );
 			}
 		}

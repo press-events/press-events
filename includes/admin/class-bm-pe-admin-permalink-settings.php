@@ -11,11 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'PE_Admin_Permalink_Settings', false ) ) :
+if ( ! class_exists( 'BM_PE_Admin_Permalink_Settings', false ) ) :
 /**
- * PE_Admin_Permalink_Settings class.
+ * BM_PE_Admin_Permalink_Settings class.
  */
-class PE_Admin_Permalink_Settings {
+class BM_PE_Admin_Permalink_Settings {
 
 	/**
 	 * Permalink settings.
@@ -132,4 +132,4 @@ class PE_Admin_Permalink_Settings {
 }
 
 endif;
-return new PE_Admin_Permalink_Settings();
+return new BM_PE_Admin_Permalink_Settings();
