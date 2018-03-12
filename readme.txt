@@ -1,14 +1,14 @@
-=== Press Events ===
+=== WordPress Event Calendar Plugin – Press Events ===
 Contributors: burnmedialtd
-Tags: events, calendar, event, venue, organizer, dates, date, google maps, conference, burn media
+Tags: events, event calendar, event management, event organisers, event locations, event management plugin
 Requires at least: 4.7
-Tested up to: 4.9.4
-Requires PHP: 5.3
+Tested up to: 4.9
+Requires PHP: 5.4
 Stable tag: 1.0.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Press Events is an event management plugin that makes it easy to publish and manage events. Designed from the ground up to be simple to use and a great platform for developers to extend and customize.
+A simple to use event management plugin that helps you create, manage and share your events. With a modern and slick interface Press Events is the easiest way to manage your events in WordPress.
 
 == Description ==
 Press Events is a free WordPress events plugin that allows you to easily create, manage and share events. Designed from the ground up to be simple to get started and use, Press Events blends in perfectly with your current WordPress site.
@@ -43,11 +43,16 @@ Allow visitors to search events without reloading the page - this is a big bonus
 
 Press Events fully supports right to left text for languages that require it.
 
-
 == Installation ==
-1. Activate the plugin
-2. Go to Events > Settings to customize plugin options
-3. For more details, please visit the official [Documentation](https://pressevents.xyz/docs/) page.
+Press Events has been developed to be really simple to use and requires little configuration and setting changes to start creating events.
+
+= Installing =
+
+1. Eighter download the plugin directly from your WordPress admin or upload the .zip file.
+2. Click install, once installed, activate and you\'re done!
+
+
+Once installed and activated you’ll find a new “Events” item in your admin menu.
 
 == Frequently Asked Questions ==
 = Do I need to know any coding to use this plugin? =
@@ -76,6 +81,10 @@ Yes, we've tried very hard to make sure Press Events blends into all themes. How
 7. Event archive calendar
 
 == Changelog ==
+= 1.0.6: March, 2018 =
+
+* Fixed event asset bug
+
 = 1.0.5: March, 2018 =
 
-* First official release!
+* First official release of Press Events!
