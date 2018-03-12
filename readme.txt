@@ -64,7 +64,7 @@ Yes, Press Events works great on single site and multi-site WordPress installs.
 
 = Does the plugin work with any WordPress theme? =
 
-Yes, we\'ve tried very hard to make sure Press Events blends into all themes. However, some themes may have conflicts - if you find any styling issues with your theme please create a post in the community forum.
+Yes, we've tried very hard to make sure Press Events blends into all themes. However, some themes may have conflicts - if you find any styling issues with your theme please create a post in the community forum.
 
 == Screenshots ==
 1. Edit event page
