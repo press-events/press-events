@@ -1,4 +1,4 @@
-=== WordPress Event Calendar Plugin – Press Events ===
+=== Events Calendar Plugin – Press Events ===
 Contributors: burnmedialtd
 Tags: events, event calendar, event management, event organisers, event locations, event management plugin
 Requires at least: 4.7
