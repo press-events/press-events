@@ -8,7 +8,7 @@ Stable tag: 1.0.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-A simple to use event management plugin that helps you create, manage and share your events. With a modern and slick interface Press Events is the easiest way to manage your events in WordPress.
+Events calendar plugin with a modern, user-friendly interface that helps you create, manage and share your events on WordPress.
 
 == Description ==
 Press Events is a free WordPress events plugin that allows you to easily create, manage and share events. Designed from the ground up to be simple to get started and use, Press Events blends in perfectly with your current WordPress site.
