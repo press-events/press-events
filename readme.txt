@@ -12,7 +12,13 @@ Events calendar plugin with a modern, user-friendly interface that helps you cre
 
 == Description ==
 
-Press Events is designed to be the ultimate free events calendar and management plugin for WordPress. Start creating and sharing events in minutes with its simple and modern interface, Press Events is really easy to get started. Developers can utilize the built-in hooks and filters to create custom event integrations or even completely custom views and templates. Press Events was created to provide a perfect platform to build add-ons and scale your events website.
+**Press Events is the easiest way to publish, manage and share events on WordPress.**
+
+Designed to be the ultimate free events calendar and management plugin for WordPress. Press Events allows you to start creating and sharing events in minutes, with its simple and modern interface - Press Events is really easy to get started.
+
+Developers can utilize the built-in hooks and filters to create custom event integrations or even completely custom views and templates. Press Events was created to provide a perfect platform to build add-ons and scale your event's website.
+
+For your visitor's Press Events features a modern look and feel. The responsive events calendar is designed to be clean and function well on all screen sizes.
 
 **Features of Press Events include, but are not limited to:**
 
@@ -31,13 +37,19 @@ Press Events is designed to be the ultimate free events calendar and management 
 
 For more information visit [pressevents.xyz](https://pressevents.xyz/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Press+Events+Readme&utm_content=Home+Page)
 
+**Add-ons**
+
+We're currently working on improving our core Press Events plugin. We plan on creating add-ons to add functionality and improve the user experience of our event plugin in due course.
+
+Keep an eye on our [add-ons page](https://pressevents.xyz/add-ons/) on our website for more information.
+
 == Installation ==
 Press Events has been developed to be really simple to use and requires little configuration and setting changes to start creating events.
 
 = Installing =
 
 1. Either download the plugin directly from your WordPress admin or upload the .zip file.
-2. Click install, once installed, activate and you\'re done!
+2. Click install, once installed, activate and you're done!
 
 Once installed and activated you’ll find a new “Events” item in your admin menu.
 
