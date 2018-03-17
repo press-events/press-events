@@ -1,5 +1,5 @@
 === Events Calendar Plugin – Press Events ===
-Contributors: burnmedialtd
+Contributors: burnmedialtd,pressevents
 Tags: events, event calendar, event management, event organisers, event locations, event management plugin
 Requires at least: 4.7
 Tested up to: 4.9
@@ -11,46 +11,33 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Events calendar plugin with a modern, user-friendly interface that helps you create, manage and share your events on WordPress.
 
 == Description ==
-Press Events is a free WordPress events plugin that allows you to easily create, manage and share events. Designed from the ground up to be simple to get started and use, Press Events blends in perfectly with your current WordPress site.
 
-This events plugin is designed to be a great platform for developers - with extensible code, Press Events is a doddle to extend and customise.
+Press Events is designed to be the ultimate free events calendar and management plugin for WordPress. Start creating and sharing events in minutes with its simple and modern interface, Press Events is really easy to get started. Developers can utilize the built-in hooks and filters to create custom event integrations or even completely custom views and templates. Press Events was created to provide a perfect platform to build add-ons and scale your events website.
 
-= Create & Save Event Locations =
+**Features of Press Events include, but are not limited to:**
 
-Create and save event locations to show your visitors where the event will be. You can also choose to show a static Google Map on the event page.
+* A simple and intuitive user interface.
+* Uses default WordPress options so you can get started in minutes
+* Multiple event archive views
+* Event date and time options
+* Create, edit & reuse event locations
+* Add unlimited event organisers
+* Responsive event calendar
+* Browse the event calendar via AJAX, allowing a seamless user experience without page refreshes
+* Search and filter events on the archive
+* Categories and tag events like posts
+* Add event images
+* Show static Google Maps on the event page
 
-= Create & Save Event Organisers =
-
-Attach event organisers to an event and allow visitors to view who’s organising it!
-
-= Event Image =
-
-Add an image to an event and give your visitor a snapshot of your event.
-
-= Event Categories & Tags =
-
-Sort the events with categories and tags and allow visitors to search by category and tag in the frontend.
-
-= Event days and time =
-
-Choose whether the event is one day, multiple day an all day event or set start and end times.
-
-= Ajax Archive =
-
-Allow visitors to search events without reloading the page - this is a big bonus for user experience.
-
-= RTL Support =
-
-Press Events fully supports right to left text for languages that require it.
+For more information visit [pressevents.xyz](https://pressevents.xyz/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Press+Events+Readme&utm_content=Home+Page)
 
 == Installation ==
 Press Events has been developed to be really simple to use and requires little configuration and setting changes to start creating events.
 
 = Installing =
 
-1. Eighter download the plugin directly from your WordPress admin or upload the .zip file.
+1. Either download the plugin directly from your WordPress admin or upload the .zip file.
 2. Click install, once installed, activate and you\'re done!
-
 
 Once installed and activated you’ll find a new “Events” item in your admin menu.
 
